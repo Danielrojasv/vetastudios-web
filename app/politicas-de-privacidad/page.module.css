@@ -1,0 +1,77 @@
+
+.container {
+    max-width: var(--page-max-width, 800px);
+    width: 100%;
+    padding: var(--spacing-4x, 40px) var(--spacing-2x, 20px);
+    margin: 0 auto;
+}
+
+.mainContent {
+    /* No specific styles needed here, just a container */
+}
+
+.pageTitle {
+    font-weight: var(--font-weight-semibold, 600);
+    font-size: var(--font-size-2xl, 1.5rem);
+    margin: var(--spacing-0, 0);
+    letter-spacing: -0.5px;
+    color: var(--color-text-primary, #F5F5F5);
+}
+
+.lastUpdated {
+    font-size: var(--font-size-sm, 0.95rem);
+    color: var(--color-text-secondary, #A0A0A0);
+    margin-top: var(--spacing-2x, 20px);
+    margin-bottom: var(--spacing-4x, 40px);
+}
+
+p,
+li {
+    font-size: var(--font-size-sm, 0.95rem);
+    color: var(--color-text-secondary, #A0A0A0);
+    margin-bottom: var(--spacing-unit, 16px);
+}
+
+li {
+    margin-bottom: var(--spacing-1x, 8px);
+}
+
+ul {
+    margin-top: var(--spacing-1x, 8px);
+    margin-bottom: var(--spacing-2x, 20px);
+    padding-left: var(--spacing-2x, 20px);
+}
+
+ul ul {
+    margin-top: var(--spacing-1x, 8px);
+    margin-bottom: var(--spacing-1x, 8px);
+}
+
+.sectionHeading {
+    font-weight: var(--font-weight-medium, 500);
+    font-size: var(--font-size-xl, 1.2rem);
+    margin-top: var(--spacing-4x, 40px);
+    margin-bottom: var(--spacing-2x, 20px);
+    color: var(--color-text-primary, #F5F5F5);
+    border-left: 3px solid var(--color-accent-primary, #E63946);
+    padding-left: var(--spacing-1x, 10px);
+}
+
+a {
+    color: var(--color-accent-primary, #E63946);
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.codeSnippet {
+    font-family: var(--font-family-mono, 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace);
+    background-color: var(--color-bg-code, #2B2D42);
+    padding: 0.2em 0.4em;
+    border-radius: var(--radius-sm, 3px);
+    color: var(--color-text-code, #F5F5F5);
+}
