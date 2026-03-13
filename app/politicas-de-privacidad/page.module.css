@@ -25,24 +25,24 @@
     margin-bottom: var(--spacing-4x, 40px);
 }
 
-p,
-li {
+.mainContent p,
+.mainContent li {
     font-size: var(--font-size-sm, 0.95rem);
     color: var(--color-text-secondary, #A0A0A0);
     margin-bottom: var(--spacing-unit, 16px);
 }
 
-li {
+.mainContent li {
     margin-bottom: var(--spacing-1x, 8px);
 }
 
-ul {
+.mainContent ul {
     margin-top: var(--spacing-1x, 8px);
     margin-bottom: var(--spacing-2x, 20px);
     padding-left: var(--spacing-2x, 20px);
 }
 
-ul ul {
+.mainContent ul ul {
     margin-top: var(--spacing-1x, 8px);
     margin-bottom: var(--spacing-1x, 8px);
 }
@@ -57,13 +57,13 @@ ul ul {
     padding-left: var(--spacing-1x, 10px);
 }
 
-a {
+.mainContent a {
     color: var(--color-accent-primary, #E63946);
     text-decoration: none;
     transition: opacity 0.2s;
 }
 
-a:hover {
+.mainContent a:hover {
     opacity: 0.8;
     text-decoration: underline;
 }
