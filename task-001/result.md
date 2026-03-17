@@ -1,3 +1,5 @@
+```html
+index.html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -70,3 +72,56 @@
     </footer>
 </body>
 </html>
+```
+
+```css
+styles.css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+}
+
+.card {
+    background-color: #111111;
+    border: 2px solid #222222;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+.tags {
+    display: flex;
+    gap: 5px;
+}
+
+.tag {
+    background-color: #222222;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+```
