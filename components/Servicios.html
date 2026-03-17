@@ -13,6 +13,15 @@
             --card-bg: #0A0A0C;
         }
 
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
         .services-section {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -21,8 +30,8 @@
         }
 
         .service-card {
-            background-color: var(--card-bg);
-            border-left: 4px solid var(--accent-color);
+            background-color: #111111;
+            border: 1px solid #222222;
             border-radius: 8px;
             padding: 20px;
             transition: transform 0.3s;
@@ -35,6 +44,7 @@
         .service-card h4 {
             font-size: 1.5rem;
             margin: 10px 0;
+            color: #F5F5F5;
         }
 
         .service-card p {
@@ -53,7 +63,7 @@
         .tag {
             font-size: 0.75rem;
             padding: 4px 10px;
-            background-color: var(--border-color);
+            background-color: #222222;
             border-radius: 4px;
             color: #D0D0D0;
             font-family: monospace;
@@ -72,42 +82,42 @@
     <section class="services-section">
         <div class="service-card">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12s12-5.373 12-12C24 5.373 18.627 0 12 0zm0 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-15h2v6h-2zm0 8h2v2h-2z"/></svg>
-            <h4>Desarrollo Web</h4>
-            <p>Creación de sitios web responsivos y optimizados para SEO.</p>
-            <div class="tag-container">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">JavaScript</span>
-            </div>
-        </div>
-        <div class="service-card">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12s12-5.373 12-12C24 5.373 18.627 0 12 0zm0 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-15h2v6h-2zm0 8h2v2h-2z"/></svg>
-            <h4>Consultoría Técnica</h4>
-            <p>Asesoría en arquitectura de software y mejores prácticas.</p>
-            <div class="tag-container">
-                <span class="tag">Arquitectura</span>
-                <span class="tag">Optimización</span>
-                <span class="tag">Estrategia</span>
-            </div>
-        </div>
-        <div class="service-card">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12s12-5.373 12-12C24 5.373 18.627 0 12 0zm0 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-15h2v6h-2zm0 8h2v2h-2z"/></svg>
-            <h4>Desarrollo Móvil</h4>
-            <p>Aplicaciones móviles nativas y multiplataforma.</p>
-            <div class="tag-container">
-                <span class="tag">iOS</span>
-                <span class="tag">Android</span>
-                <span class="tag">React Native</span>
-            </div>
-        </div>
-        <div class="service-card">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12s12-5.373 12-12C24 5.373 18.627 0 12 0zm0 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-15h2v6h-2zm0 8h2v2h-2z"/></svg>
-            <h4>Integración de Sistemas</h4>
-            <p>Conexión de aplicaciones y servicios para optimizar flujos de trabajo.</p>
+            <h4>Desarrollo de APIs</h4>
+            <p>Creación de interfaces de programación para aplicaciones.</p>
             <div class="tag-container">
                 <span class="tag">API</span>
-                <span class="tag">Microservicios</span>
+                <span class="tag">REST</span>
+                <span class="tag">Node.js</span>
+            </div>
+        </div>
+        <div class="service-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12s12-5.373 12-12C24 5.373 18.627 0 12 0zm0 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-15h2v6h-2zm0 8h2v2h-2z"/></svg>
+            <h4>Aplicaciones Web</h4>
+            <p>Desarrollo de aplicaciones interactivas y dinámicas.</p>
+            <div class="tag-container">
+                <span class="tag">JavaScript</span>
+                <span class="tag">React</span>
+                <span class="tag">Vue</span>
+            </div>
+        </div>
+        <div class="service-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12s12-5.373 12-12C24 5.373 18.627 0 12 0zm0 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-15h2v6h-2zm0 8h2v2h-2z"/></svg>
+            <h4>Automatización con IA</h4>
+            <p>Implementación de soluciones inteligentes para procesos.</p>
+            <div class="tag-container">
+                <span class="tag">IA</span>
                 <span class="tag">Automatización</span>
+                <span class="tag">Machine Learning</span>
+            </div>
+        </div>
+        <div class="service-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12s12-5.373 12-12C24 5.373 18.627 0 12 0zm0 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-15h2v6h-2zm0 8h2v2h-2z"/></svg>
+            <h4>Infraestructura</h4>
+            <p>Gestión y optimización de recursos tecnológicos.</p>
+            <div class="tag-container">
+                <span class="tag">Cloud</span>
+                <span class="tag">DevOps</span>
+                <span class="tag">Seguridad</span>
             </div>
         </div>
     </section>
