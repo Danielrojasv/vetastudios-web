@@ -1,3 +1,5 @@
+```html
+index.html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -372,3 +374,45 @@
 
 </body>
 </html>
+```
+
+```html
+politicas-de-privacidad/index.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Políticas de Privacidad | Veta Studios</title>
+    <style>
+        :root {
+            --bg-color: #000000;
+            --text-color: #F5F5F5;
+            --accent-color: #E63946;
+            --border-color: #2B2D42;
+            --card-bg: #111111;
+            --input-bg: #111111;
+            --input-border: #222222;
+            --input-focus: #e53935;
+            --tag-bg: #222222;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            padding: 40px 20px;
+        }
+
+        header {
+            border
