@@ -1,3 +1,5 @@
+```html
+index.html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -80,3 +82,58 @@
     </footer>
 </body>
 </html>
+```
+
+```css
+styles.css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+section {
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #111111;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(25% - 40px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.tags {
+    display: flex;
+    gap: 5px;
+}
+
+.tags span {
+    background-color: #222222;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+```
