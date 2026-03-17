@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #111111;
+}
+
+.servicios {
+    border-left: 4px solid #e53935;
+    padding: 20px;
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.card {
+    background-color: #111111;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.card h3 {
+    color: #e53935;
+}
+
+.tags {
+    margin-top: 10px;
+}
+
+.tag {
+    background-color: #e53935;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    display: inline-block;
+}
