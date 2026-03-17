@@ -1,3 +1,5 @@
+```html
+index.html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -421,3 +423,108 @@
 
 </body>
 </html>
+```
+
+```html
+politicas-de-privacidad/index.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Políticas de Privacidad | Veta Studios</title>
+    <style>
+        :root {
+            --bg-color: #000000;
+            --text-color: #F5F5F5;
+            --accent-color: #E63946;
+            --border-color: #2B2D42;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            padding: 40px 20px;
+        }
+
+        header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-img {
+            height: 48px;
+            width: auto;
+            display: block;
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin: 0;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            font-weight: 500;
+            font-size: 1.2rem;
+            margin-top: 40px;
+            color: var(--text-color);
+            border-left: 3px solid var(--accent-color);
+            padding-left: 10px;
+        }
+
+        p, li {
+            font-size: 0.95rem;
+            color: #A0A0A0;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="/logo-veta-blanco.png" alt="Logo de Veta Studios" class="logo-img">
+            <h1>Veta Studios</h1>
+        </header>
+
+        <main>
+            <h2>Políticas de Privacidad</h2>
+            <p><strong>Última actualización:</strong> 2 de Marzo de 2026</p>
+            
+            <p>En <strong>Veta Studios</strong> ("nosotros", "nuestro" o "la Firma"), desarrollamos soluciones de ingeniería de software, aplicaciones móviles y productos de entretenimiento digital (conjuntamente,
