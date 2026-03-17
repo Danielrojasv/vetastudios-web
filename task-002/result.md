@@ -1,3 +1,5 @@
+```html
+index.html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -139,8 +141,8 @@
         }
 
         .project-card {
-            background-color: #111111;
-            border: 1px solid #222222;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
             border-radius: 8px;
             padding: 30px;
             transition: border-color 0.3s ease;
@@ -171,9 +173,9 @@
         .tag {
             font-size: 0.75rem;
             padding: 4px 10px;
-            background-color: #222222;
+            background-color: var(--border-color);
             border-radius: 4px;
-            color: #ffffff;
+            color: #D0D0D0;
             font-family: monospace;
         }
 
@@ -289,50 +291,18 @@
             </section>
 
             <section class="projects-section">
-                <h3>Servicios</h3>
+                <h3>Productos Internos</h3>
                 
                 <div class="project-card">
-                    <svg width="50" height="50" fill="#E63946"><circle cx="25" cy="25" r="20"/></svg>
-                    <h4>Desarrollo Web</h4>
-                    <p>Creación de sitios web responsivos y optimizados para SEO, utilizando las últimas tecnologías.</p>
+                    <h4>Kitty Pot</h4>
+                    <p>Una demostración técnica de nuestro dominio en motores físicos y optimización de recursos móviles. Un puzzle dinámico de colisiones y manejo de gravedad, empaquetado como una experiencia lúdica altamente adictiva.</p>
                     <div class="tag-container">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
+                        <span class="tag">App Móvil</span>
+                        <span class="tag">Motor de Físicas</span>
+                        <span class="tag">Optimización 2D</span>
+                        <span class="tag">Producto Propio</span>
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <svg width="50" height="50" fill="#E63946"><rect width="50" height="50"/></svg>
-                    <h4>Aplicaciones Móviles</h4>
-                    <p>Desarrollo de aplicaciones móviles nativas y multiplataforma para iOS y Android.</p>
-                    <div class="tag-container">
-                        <span class="tag">React Native</span>
-                        <span class="tag">Flutter</span>
-                        <span class="tag">iOS</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <svg width="50" height="50" fill="#E63946"><polygon points="25,0 50,50 0,50"/></svg>
-                    <h4>Consultoría Técnica</h4>
-                    <p>Asesoría en arquitectura de software y optimización de sistemas existentes.</p>
-                    <div class="tag-container">
-                        <span class="tag">Arquitectura</span>
-                        <span class="tag">Optimización</span>
-                        <span class="tag">Auditoría</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <svg width="50" height="50" fill="#E63946"><path d="M0 50 L25 0 L50 50 Z"/></svg>
-                    <h4>Marketing Digital</h4>
-                    <p>Estrategias de marketing digital para aumentar la visibilidad y el alcance de tu negocio.</p>
-                    <div class="tag-container">
-                        <span class="tag">SEO</span>
-                        <span class="tag">SEM</span>
-                        <span class="tag">Redes Sociales</span>
-                    </div>
+                    <a href="https://kittypotgame.com" class="btn">Ver Proyecto</a>
                 </div>
             </section>
 
@@ -367,3 +337,4 @@
 
 </body>
 </html>
+```
