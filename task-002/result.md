@@ -1,0 +1,43 @@
+```css
+src/css/servicios.css
+/* Sección Servicios - Estilos específicos */
+.servicios-section {
+  font-family: 'Inter', sans-serif;
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.servicio-card {
+  border: 1px solid #222222;
+  padding: 1.5rem;
+  transition: border-color 0.3s ease;
+}
+
+.servicio-card:hover {
+  border-color: #e53935;
+}
+
+.servicio-tag {
+  background-color: #222222;
+  color: #ffffff;
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+.servicio-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.servicio-description {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+```
