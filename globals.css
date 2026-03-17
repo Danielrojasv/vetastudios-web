@@ -1,0 +1,8 @@
+
+/* Variables CSS */
+:root {
+    --color-bg: #000000; /* Fondo principal */
+    --color-accent: #e53935; /* Color de acento */
+    --font-primary: 'Inter', sans-serif; /* Fuente principal */
+    --spacing-unit: 8px; /* Unidad de espaciado */
+}
