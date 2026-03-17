@@ -1,0 +1,158 @@
+### components/Proyectos/Proyectos.tsx
+```tsx
+// components/Proyectos/Proyectos.tsx
+import styles from './Proyectos.module.css';
+
+interface Proyecto {
+  id: number;
+  nombre: string;
+  descripcion: string;
+  stack: string[];
+  estado: 'produccion' | 'desarrollo';
+}
+
+const proyectos: Proyecto[] = [
+  {
+    id: 1,
+    nombre: 'Sistema de Gestión Empresarial',
+    descripcion: 'Plataforma integral para la gestión de recursos humanos y finanzas corporativas.',
+    stack: ['React', 'Node.js', 'MongoDB'],
+    estado: 'produccion'
+  },
+  {
+    id: 2,
+    nombre: 'Aplicación de Salud Digital',
+    descripcion: 'App móvil para seguimiento de hábitos saludables y consultas médicas online.',
+    stack: ['React Native', 'Firebase', 'Python'],
+    estado: 'desarrollo'
+  }
+];
+
+export default function Proyectos() {
+  return (
+    <section className={styles.proyectosSection}>
+      <h2 className={styles.titulo}>
+        Lo que hemos <span className={styles.destacado}>construido.</span>
+      </h2>
+      
+      <div className={styles.proyectosGrid}>
+        {proyectos.map((proyecto) => (
+          <div key={proyecto.id} className={styles.card}>
+            <div className={styles.badgeContainer}>
+              <span className={
+                proyecto.estado === 'produccion' 
+                  ? styles.badgeProduccion 
+                  : styles.badgeDesarrollo
+              }>
+                {proyecto.estado === 'produccion' ? 'En producción' : 'En desarrollo'}
+              </span>
+            </div>
+            
+            <h3 className={styles.nombre}>{proyecto.nombre}</h3>
+            <p className={styles.descripcion}>{proyecto.descripcion}</p>
+            
+            <div className={styles.stackContainer}>
+              {proyecto.stack.map((tech, index) => (
+                <span key={index} className={styles.stackItem}>{tech}</span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+```
+
+### components/Proyectos/Proyectos.module.css
+```css
+/* components/Proyectos/Proyectos.module.css */
+.proyectosSection {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.destacado {
+  color: #ff0000;
+}
+
+.proyectosGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  border: 1px solid #222222;
+  border-radius: 8px;
+  padding: 1.5rem;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.badgeContainer {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.badgeProduccion {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badgeDesarrollo {
+  background-color: #ff9800;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.nombre {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem 0 0.5rem;
+  color: #333333;
+}
+
+.descripcion {
+  color: #666666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.stackContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.stackItem {
+  background-color: #f0f0f0;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: #444444;
+}
+```
