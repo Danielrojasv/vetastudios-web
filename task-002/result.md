@@ -1,3 +1,5 @@
+```html
+index.html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -139,8 +141,8 @@
         }
 
         .project-card {
-            background-color: #111111;
-            border: 1px solid #222222;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
             border-radius: 8px;
             padding: 30px;
             transition: border-color 0.3s ease;
@@ -171,7 +173,7 @@
         .tag {
             font-size: 0.75rem;
             padding: 4px 10px;
-            background-color: #222222;
+            background-color: var(--border-color);
             border-radius: 4px;
             color: #D0D0D0;
             font-family: monospace;
@@ -289,7 +291,7 @@
             </section>
 
             <section class="projects-section">
-                <h3>Lo que construimos.</h3>
+                <h3>Productos Internos</h3>
                 
                 <div class="project-card">
                     <h4>Kitty Pot</h4>
@@ -301,36 +303,6 @@
                         <span class="tag">Producto Propio</span>
                     </div>
                     <a href="https://kittypotgame.com" class="btn">Ver Proyecto</a>
-                </div>
-
-                <div class="project-card">
-                    <h4>Proyecto A</h4>
-                    <p>Descripción breve del Proyecto A. Un enfoque innovador en la solución de problemas complejos.</p>
-                    <div class="tag-container">
-                        <span class="tag">Web App</span>
-                        <span class="tag">Innovación</span>
-                    </div>
-                    <a href="#" class="btn">Ver Proyecto</a>
-                </div>
-
-                <div class="project-card">
-                    <h4>Proyecto B</h4>
-                    <p>Descripción breve del Proyecto B. Un sistema que mejora la eficiencia operativa.</p>
-                    <div class="tag-container">
-                        <span class="tag">Software</span>
-                        <span class="tag">Eficiencia</span>
-                    </div>
-                    <a href="#" class="btn">Ver Proyecto</a>
-                </div>
-
-                <div class="project-card">
-                    <h4>Proyecto C</h4>
-                    <p>Descripción breve del Proyecto C. Un producto que transforma la experiencia del usuario.</p>
-                    <div class="tag-container">
-                        <span class="tag">UX/UI</span>
-                        <span class="tag">Transformación</span>
-                    </div>
-                    <a href="#" class="btn">Ver Proyecto</a>
                 </div>
             </section>
 
@@ -364,3 +336,4 @@
 
 </body>
 </html>
+```
