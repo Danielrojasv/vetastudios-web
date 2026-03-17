@@ -1,3 +1,5 @@
+```html
+index.html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -193,50 +195,6 @@
             opacity: 0.8;
         }
 
-        .clients-section {
-            margin-bottom: 80px;
-        }
-
-        .clients-section h3 {
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #666;
-            margin-bottom: 30px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 10px;
-        }
-
-        .clients-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        @media (max-width: 768px) {
-            .clients-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .client-card {
-            background-color: #111111;
-            border: 1px solid #222222;
-            border-radius: 8px;
-            padding: 25px;
-        }
-
-        .client-card h4 {
-            font-size: 1.1rem;
-            margin: 0 0 10px 0;
-        }
-
-        .client-card p {
-            color: #A0A0A0;
-            font-size: 0.9rem;
-            margin: 0;
-        }
-
         footer {
             width: 100%;
             border-top: 1px solid var(--border-color);
@@ -333,24 +291,6 @@
                     <a href="#" class="btn">Ver Proyecto</a>
                 </div>
             </section>
-
-            <section class="clients-section">
-                <h3>Con quienes hemos trabajado.</h3>
-                <div class="clients-grid">
-                    <div class="client-card">
-                        <h4>Mercado Libre</h4>
-                        <p>Desarrollo de soluciones de backend escalables</p>
-                    </div>
-                    <div class="client-card">
-                        <h4>Falabella Tecnología</h4>
-                        <p>Implementación de arquitecturas de microservicios</p>
-                    </div>
-                    <div class="client-card">
-                        <h4>CrediTú</h4>
-                        <p>Optimización de sistemas de procesamiento de datos</p>
-                    </div>
-                </div>
-            </section>
         </main>
     </div>
 
@@ -364,3 +304,4 @@
 
 </body>
 </html>
+```
