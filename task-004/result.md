@@ -1,0 +1,61 @@
+```css
+css/servicios.css
+:root {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --accent-color: #e53935;
+    --border-color: #222222;
+    --card-bg: #111111;
+    --secondary-color: #888888;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.services-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    border-left: 4px solid var(--accent-color);
+    padding-left: 20px;
+}
+
+.service-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.service-tag {
+    background-color: var(--border-color);
+    color: var(--text-color);
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.service-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+p {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+```
