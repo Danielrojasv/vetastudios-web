@@ -1,3 +1,5 @@
+```html
+index.html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -447,3 +449,100 @@
 
 </body>
 </html>
+```
+
+```html
+politicas-de-privacidad/index.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Políticas de Privacidad | Veta Studios</title>
+    <style>
+        :root {
+            --bg-color: #000000;
+            --text-color: #ffffff;
+            --accent-color: #e53935;
+            --border-color: #222222;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: Inter, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            padding: 40px 20px;
+        }
+
+        header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-img {
+            height: 48px;
+            width: auto;
+            display: block;
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin: 0;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            font-weight: 500;
+            font-size: 1.2rem;
+            margin-top: 40px;
+            color: var(--text-color);
+            border-left: 4px solid var(--accent-color);
+            padding-left: 10px;
+        }
+
+        p, li {
+            font-size: 0.95rem;
+            color: #888888;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            color: #888888;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="/logo-veta-blanco.png" alt="Logo de Veta Studios
