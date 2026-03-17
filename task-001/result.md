@@ -1,0 +1,122 @@
+```html
+components/Servicios.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Veta Studios</title>
+    <style>
+        :root {
+            --bg-color: #000000;
+            --text-color: #F5F5F5;
+            --accent-color: #E63946;
+            --border-color: #222222;
+            --card-bg: #111111;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .services-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .service-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            transition: border-color 0.3s ease;
+        }
+
+        .service-card:hover {
+            border-color: var(--accent-color);
+        }
+
+        .service-tag {
+            background-color: var(--border-color);
+            color: #D0D0D0;
+            font-size: 0.75rem;
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin-right: 5px;
+            display: inline-block;
+        }
+
+        .service-icon {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        p {
+            color: #A0A0A0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="services-section">
+        <div class="service-card">
+            <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+            <h3>Desarrollo Web</h3>
+            <p>Creación de sitios web responsivos y optimizados para SEO.</p>
+            <div>
+                <span class="service-tag">HTML</span>
+                <span class="service-tag">CSS</span>
+                <span class="service-tag">JavaScript</span>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+            <h3>Aplicaciones Móviles</h3>
+            <p>Desarrollo de aplicaciones móviles nativas y híbridas.</p>
+            <div>
+                <span class="service-tag">iOS</span>
+                <span class="service-tag">Android</span>
+                <span class="service-tag">React Native</span>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+            <h3>Consultoría Técnica</h3>
+            <p>Asesoramiento en arquitectura de software y mejores prácticas.</p>
+            <div>
+                <span class="service-tag">Arquitectura</span>
+                <span class="service-tag">Auditoría</span>
+                <span class="service-tag">Optimización</span>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+            <h3>Diseño Gráfico</h3>
+            <p>Creación de identidades visuales y material gráfico.</p>
+            <div>
+                <span class="service-tag">Branding</span>
+                <span class="service-tag">UI/UX</span>
+                <span class="service-tag">Ilustración</span>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+```
