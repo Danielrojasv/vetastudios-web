@@ -1,0 +1,37 @@
+```css
+css/clientes.css
+:root {
+    --bg-color: #000000;
+    --text-color: #F5F5F5;
+    --accent-color: #E63946;
+    --border-color: #222222;
+    --card-bg: #111111;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.clients-section {
+    border-left: 4px solid #e53935;
+    padding: 20px;
+}
+
+.client-card {
+    background-color: #111111;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.client-role {
+    color: #888888;
+    font-size: 0.9rem;
+}
+```
