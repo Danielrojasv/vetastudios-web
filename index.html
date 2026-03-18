@@ -9,8 +9,8 @@
         :root {
             --bg-color: #000000;
             --text-color: #F5F5F5;
-            --accent-color: #E63946;
-            --border-color: #2B2D42;
+            --accent-color: #e53935; /* Actualizado a color del sistema */
+            --border-color: #222222; /* Actualizado a color del sistema */
             --card-bg: #0A0A0C;
         }
 
@@ -109,7 +109,7 @@
         .about-box {
             background-color: var(--card-bg);
             padding: 30px;
-            border-left: 3px solid var(--accent-color);
+            border-left: 4px solid var(--accent-color); /* Borde izquierdo rojo */
             border-radius: 0 8px 8px 0;
         }
 
@@ -191,6 +191,10 @@
 
         .btn:hover {
             opacity: 0.8;
+        }
+
+        .btn:focus {
+            border: 2px solid var(--accent-color); /* Focus state */
         }
 
         footer {
