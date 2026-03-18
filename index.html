@@ -214,7 +214,13 @@
         footer a:hover {
             color: var(--text-color);
         }
+
+        .main-nav a.active {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
     </style>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
 
@@ -223,6 +229,14 @@
             <img src="logo-veta-blanco.png" alt="Logo de Veta Studios" class="logo-img">
             <h1>Veta Studios</h1>
         </header>
+
+        <nav class="main-nav">
+            <a href="/">Inicio</a>
+            <a href="/servicios">Servicios</a>
+            <a href="/proyectos">Proyectos</a>
+            <a href="/contacto">Contacto</a>
+            <a href="/politicas-de-privacidad">Políticas de Privacidad</a>
+        </nav>
 
         <main>
             <section class="hero">
