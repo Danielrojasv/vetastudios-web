@@ -15,6 +15,9 @@
             --service-card-bg: #111111;
             --service-border-color: #222222;
             --service-tag-bg: #222222;
+            --client-card-bg: #111111;
+            --client-border-color: #222222;
+            --client-accent-border: #e53935;
         }
 
         * {
@@ -131,63 +134,6 @@
             margin: 0;
         }
 
-        .services-section {
-            margin-bottom: 80px;
-        }
-
-        .services-section h3 {
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #666;
-            margin-bottom: 30px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 10px;
-        }
-
-        .service-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .service-card {
-            background-color: var(--service-card-bg);
-            border: 1px solid var(--service-border-color);
-            border-left: 4px solid var(--accent-color);
-            border-radius: 0 4px 4px 0;
-            padding: 25px;
-            color: #ffffff;
-        }
-
-        .service-card h4 {
-            margin-top: 0;
-            margin-bottom: 15px;
-            font-size: 1.2rem;
-        }
-
-        .service-card p {
-            color: #A0A0A0;
-            font-size: 0.95rem;
-            margin-bottom: 20px;
-        }
-
-        .service-tag-container {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
-        }
-
-        .service-tag {
-            font-size: 0.75rem;
-            padding: 4px 10px;
-            background-color: var(--service-tag-bg);
-            border-radius: 4px;
-            color: #D0D0D0;
-            font-family: monospace;
-        }
-
         .projects-section h3 {
             font-size: 1.2rem;
             text-transform: uppercase;
@@ -253,6 +199,46 @@
             opacity: 0.8;
         }
 
+        .clients-section {
+            margin: 80px 0;
+        }
+
+        .clients-section h3 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #666;
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .client-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .client-card {
+            background-color: var(--client-card-bg);
+            border: 1px solid var(--client-border-color);
+            border-left: 4px solid var(--client-accent-border);
+            padding: 25px;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .client-card h4 {
+            margin: 0 0 10px 0;
+            font-size: 1.3rem;
+        }
+
+        .client-card p {
+            color: #A0A0A0;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
         footer {
             width: 100%;
             border-top: 1px solid var(--border-color);
@@ -304,48 +290,6 @@
                 </div>
             </section>
 
-            <section class="services-section">
-                <h3>Servicios</h3>
-                <div class="service-grid">
-                    <div class="service-card">
-                        <h4>Desarrollo de APIs</h4>
-                        <p>Arquitectura e implementación de interfaces RESTful y GraphQL para integración de sistemas y microservicios.</p>
-                        <div class="service-tag-container">
-                            <span class="service-tag">Node.js</span>
-                            <span class="service-tag">Python</span>
-                            <span class="service-tag">API Gateway</span>
-                        </div>
-                    </div>
-                    <div class="service-card">
-                        <h4>Aplicaciones Web</h4>
-                        <p>Frontend y backend de aplicaciones web modernas con enfoque en performance y experiencia de usuario.</p>
-                        <div class="service-tag-container">
-                            <span class="service-tag">React</span>
-                            <span class="service-tag">TypeScript</span>
-                            <span class="service-tag">Express</span>
-                        </div>
-                    </div>
-                    <div class="service-card">
-                        <h4>Automatización con IA</h4>
-                        <p>Implementación de modelos de machine learning para procesos automatizados y análisis predictivo.</p>
-                        <div class="service-tag-container">
-                            <span class="service-tag">TensorFlow</span>
-                            <span class="service-tag">Python</span>
-                            <span class="service-tag">NLP</span>
-                        </div>
-                    </div>
-                    <div class="service-card">
-                        <h4>Infraestructura Cloud</h4>
-                        <p>Diseño e implementación de arquitecturas escalables en AWS, GCP y Azure con enfoque en seguridad y eficiencia.</p>
-                        <div class="service-tag-container">
-                            <span class="service-tag">Docker</span>
-                            <span class="service-tag">Kubernetes</span>
-                            <span class="service-tag">Terraform</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <section class="projects-section">
                 <h3>Productos Internos</h3>
                 
@@ -359,6 +303,24 @@
                         <span class="tag">Producto Propio</span>
                     </div>
                     <a href="https://kittypotgame.com" class="btn">Ver Proyecto</a>
+                </div>
+            </section>
+
+            <section class="clients-section">
+                <h3>Clientes</h3>
+                <div class="client-grid">
+                    <div class="client-card">
+                        <h4>Cliente A</h4>
+                        <p>Descripción del cliente o proyecto realizado.</p>
+                    </div>
+                    <div class="client-card">
+                        <h4>Cliente B</h4>
+                        <p>Descripción del cliente o proyecto realizado.</p>
+                    </div>
+                    <div class="client-card">
+                        <h4>Cliente C</h4>
+                        <p>Descripción del cliente o proyecto realizado.</p>
+                    </div>
                 </div>
             </section>
         </main>
