@@ -193,6 +193,51 @@
             opacity: 0.8;
         }
 
+        .clients-section {
+            margin-top: 80px;
+        }
+
+        .clients-section h3 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #666;
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .client-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .client-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .client-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .client-card h4 {
+            font-size: 1.2rem;
+            margin: 0 0 10px 0;
+        }
+
+        .client-card p {
+            color: #A0A0A0;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
         footer {
             width: 100%;
             border-top: 1px solid var(--border-color);
@@ -257,6 +302,24 @@
                         <span class="tag">Producto Propio</span>
                     </div>
                     <a href="https://kittypotgame.com" class="btn">Ver Proyecto</a>
+                </div>
+            </section>
+
+            <section class="clients-section">
+                <h3>Clientes</h3>
+                <div class="client-cards">
+                    <div class="client-card">
+                        <h4>Mercado Libre</h4>
+                        <p>Desarrollo de soluciones de backend escalables</p>
+                    </div>
+                    <div class="client-card">
+                        <h4>Falabella Tecnología</h4>
+                        <p>Arquitectura de microservicios y APIs</p>
+                    </div>
+                    <div class="client-card">
+                        <h4>CrediTú</h4>
+                        <p>Optimización de infraestructura cloud</p>
+                    </div>
                 </div>
             </section>
         </main>
