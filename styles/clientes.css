@@ -1,0 +1,50 @@
+.clients-section {
+    margin: 80px 0;
+}
+
+.clients-section h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #666;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.client-card {
+    background-color: #111111;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    padding: 30px;
+    transition: border-color 0.3s ease;
+    margin-bottom: 25px;
+}
+
+.client-card:hover {
+    border-color: #444444;
+}
+
+.client-card h4 {
+    font-size: 1.3rem;
+    margin: 0 0 15px 0;
+    color: var(--text-color);
+}
+
+.client-card p {
+    color: #A0A0A0;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .clients-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+    
+    .client-card {
+        margin-bottom: 0;
+    }
+}
