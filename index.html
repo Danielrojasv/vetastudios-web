@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veta Studios | Software Engineering & Digital Products</title>
     <meta name="description" content="Estudio de ingeniería de software enfocado en arquitecturas sólidas, productos digitales y experiencias interactivas. Desde Puerto Montt, Chile.">
+    <link rel="stylesheet" href="styles/servicios.css">
+    <link rel="stylesheet" href="styles/clientes.css">
+    <link rel="stylesheet" href="styles/contacto.css">
     <style>
         :root {
             --bg-color: #000000;
@@ -242,6 +245,87 @@
                     <h3>Nuestra Visión</h3>
                     <p>Consolidarnos como un referente tecnológico en la Patagonia chilena, demostrando que mediante código limpio, precisión matemática y un enfoque analítico, se pueden crear herramientas, aplicaciones y plataformas competitivas a nivel internacional.</p>
                 </div>
+            </section>
+
+            <!-- Sección de Servicios -->
+            <section class="services-section">
+                <h3>Servicios</h3>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                        <h4>Arquitectura de Software</h4>
+                        <p>Diseño e implementación de sistemas escalables, seguros y mantenibles, siguiendo principios de arquitectura limpia y patrones de diseño robustos.</p>
+                        <div class="tag-container">
+                            <span class="tag">Microservicios</span>
+                            <span class="tag">APIs REST</span>
+                            <span class="tag">GraphQL</span>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                        </svg>
+                        <h4>Desarrollo Web</h4>
+                        <p>Creación de aplicaciones web modernas con tecnologías como React, Vue, Node.js y bases de datos relacionales y no relacionales.</p>
+                        <div class="tag-container">
+                            <span class="tag">Frontend</span>
+                            <span class="tag">Backend</span>
+                            <span class="tag">Fullstack</span>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-9h10v2H7z"/>
+                        </svg>
+                        <h4>Consultoría Técnica</h4>
+                        <p>Asesoramiento especializado en optimización de procesos, selección de tecnologías y auditorías de código para equipos de desarrollo.</p>
+                        <div class="tag-container">
+                            <span class="tag">DevOps</span>
+                            <span class="tag">CI/CD</span>
+                            <span class="tag">Seguridad</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Clientes -->
+            <section class="clients-section">
+                <h3>Clientes</h3>
+                <div class="client-card">
+                    <h4>AgroAnalytics SpA</h4>
+                    <p>Desarrollamos una plataforma de análisis predictivo para optimización de cultivos utilizando IoT y machine learning, reduciendo en un 22% el uso de recursos en sus operaciones agrícolas.</p>
+                </div>
+                <div class="client-card">
+                    <h4>Maritimex Logistics</h4>
+                    <p>Implementamos un sistema de gestión de flota marítima con geolocalización en tiempo real y análisis de rutas, mejorando la eficiencia operativa en un 18%.</p>
+                </div>
+                <div class="client-card">
+                    <h4>EcoPatagonia Retail</h4>
+                    <p>Construimos una tienda online e-commerce con integración de sistemas de inventario y logística, aumentando sus ventas digitales en un 45% en el primer año.</p>
+                </div>
+            </section>
+
+            <!-- Sección de Contacto -->
+            <section class="contact-section">
+                <h3>Contacto</h3>
+                <p class="contact-subtitle">¿Tienes un proyecto en mente? Escríbenos y conversaremos sobre cómo podemos ayudarte a materializarlo.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
             </section>
 
             <section class="projects-section">
