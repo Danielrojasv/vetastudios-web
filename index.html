@@ -9,11 +9,11 @@
         :root {
             --bg-color: #000000;
             --text-color: #F5F5F5;
-            --accent-color: #E63946;
-            --border-color: #2B2D42;
-            --card-bg: #111111; /* Fondo de los cards */
-            --tag-bg: #222222; /* Fondo de los tags */
-            --tag-text: #ffffff; /* Color del texto de los tags */
+            --accent-color: #e53935;
+            --border-color: #222222;
+            --card-bg: #111111;
+            --tag-bg: #222222;
+            --tag-text: #ffffff;
         }
 
         * {
@@ -111,8 +111,11 @@
         .about-box {
             background-color: var(--card-bg);
             padding: 30px;
-            border-left: 3px solid var(--accent-color);
-            border-radius: 0 8px 8px 0;
+            border: 1px solid var(--border-color);
+        }
+
+        .about-box.featured {
+            border-left: 4px solid var(--accent-color);
         }
 
         .about-box h3 {
@@ -143,13 +146,14 @@
         .project-card {
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
-            border-radius: 8px;
+            border-radius: 0;
             padding: 30px;
             transition: border-color 0.3s ease;
+            margin-bottom: 20px;
         }
 
         .project-card:hover {
-            border-color: #4A4D6A;
+            border-color: #444444;
         }
 
         .project-card h4 {
@@ -174,9 +178,10 @@
             font-size: 0.75rem;
             padding: 4px 10px;
             background-color: var(--tag-bg);
-            border-radius: 4px;
             color: var(--tag-text);
             font-family: monospace;
+            border: none;
+            border-radius: 0;
         }
 
         .btn {
@@ -186,68 +191,71 @@
             color: var(--bg-color);
             text-decoration: none;
             font-weight: 600;
-            border-radius: 4px;
+            border-radius: 0;
             font-size: 0.9rem;
             transition: opacity 0.2s;
+            border: none;
         }
 
         .btn:hover {
             opacity: 0.8;
         }
 
-        /* Sección de contacto */
+        /* Nuevas secciones */
         .contact-section {
-            margin-bottom: 80px;
-        }
-
-        .contact-section h2 {
-            font-size: 2rem;
-            font-weight: 700;
-            margin: 0 0 10px 0;
-            line-height: 1.2;
-            letter-spacing: -1px;
-        }
-
-        .contact-section p.subtitle {
-            color: #A0A0A0;
-            font-size: 1.1rem;
-            margin-bottom: 30px;
-        }
-
-        .contact-form {
+            margin-top: 60px;
+            padding: 40px;
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 30px;
         }
 
-        .form-group {
+        .contact-section.featured {
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .contact-section h3 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-top: 0;
             margin-bottom: 20px;
         }
 
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-size: 0.95rem;
+        .contact-section p {
             color: #A0A0A0;
+            margin-bottom: 25px;
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 15px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+            color: #CCCCCC;
         }
 
         .form-group input,
         .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            background-color: #111111;
-            border: 1px solid #222222;
-            border-radius: 4px;
+            background-color: var(--bg-color);
             color: var(--text-color);
-            font-family: inherit;
+            border: 1px solid var(--border-color);
+            padding: 12px;
+            font-family: 'Inter', sans-serif;
             font-size: 1rem;
         }
 
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
-            border-color: #e53935;
+            border-color: var(--accent-color);
         }
 
         .form-group textarea {
@@ -259,12 +267,12 @@
             background-color: var(--text-color);
             color: var(--bg-color);
             border: none;
-            padding: 12px 24px;
-            font-size: 1rem;
+            padding: 12px 20px;
             font-weight: 600;
-            border-radius: 4px;
+            font-size: 1rem;
             cursor: pointer;
             transition: opacity 0.2s;
+            align-self: flex-start;
         }
 
         .submit-btn:hover {
@@ -312,7 +320,7 @@
             </section>
 
             <section class="about-section">
-                <div class="about-box">
+                <div class="about-box featured">
                     <h3>Nuestra Misión</h3>
                     <p>Desarrollar software de alto rendimiento que resuelva problemas complejos con elegancia. Transformamos la lógica computacional y la ingeniería de datos en productos funcionales, estables y optimizados, operando con estándares globales desde el sur de Chile.</p>
                 </div>
@@ -338,19 +346,18 @@
                 </div>
             </section>
 
-            <!-- Sección de Contacto -->
-            <section class="contact-section">
-                <h2>Hablemos.</h2>
-                <p class="subtitle">contacto@vetastudios.io</p>
+            <section class="contact-section featured">
+                <h3>Contacto</h3>
+                <p>¿Tienes un proyecto en mente? ¿Quieres colaborar con nosotros? Escríbenos y te responderemos a la brevedad.</p>
                 
-                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <form class="contact-form">
                     <div class="form-group">
                         <label for="name">Nombre</label>
                         <input type="text" id="name" name="name" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="email">Email</label>
+                        <label for="email">Correo Electrónico</label>
                         <input type="email" id="email" name="email" required>
                     </div>
                     
@@ -359,7 +366,7 @@
                         <textarea id="message" name="message" required></textarea>
                     </div>
                     
-                    <button type="submit" class="submit-btn">Enviar</button>
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
                 </form>
             </section>
         </main>
