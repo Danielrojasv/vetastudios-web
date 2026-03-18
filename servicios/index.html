@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Veta Studios</title>
+    <meta name="description" content="APIs, aplicaciones web, automatización con IA e infraestructura. Lo que construimos en Veta Studios.">
+    <link rel="stylesheet" href="/css/shared.css">
+    <style>
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+
+        .service-card {
+            background-color: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            padding: 28px;
+        }
+
+        .service-card .icon {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 16px;
+            color: var(--color-accent);
+        }
+
+        .service-card h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            margin: 0 0 16px 0;
+            font-size: 0.92rem;
+            color: var(--color-text-muted);
+            line-height: 1.6;
+        }
+
+@media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .clients-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="/" class="logo-link">
+                <img src="/logo-veta-blanco.png" alt="Logo de Veta Studios" class="logo-img">
+                <span class="logo-name">Veta Studios</span>
+            </a>
+            <nav class="main-nav">
+                <a href="/servicios">Servicios</a>
+                <a href="/proyectos">Proyectos</a>
+                <a href="/contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h1>Lo que <span class="accent">construimos.</span></h1>
+                <p>Desde APIs de alto rendimiento hasta sistemas con inteligencia artificial. Trabajamos con las herramientas adecuadas para cada problema.</p>
+            </section>
+
+            <div class="services-grid">
+                <!-- Desarrollo de APIs -->
+                <div class="service-card">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M8 9l3 3-3 3M13 15h3M3 5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"/>
+                    </svg>
+                    <h3>Desarrollo de APIs</h3>
+                    <p>Diseñamos e implementamos APIs REST y GraphQL con arquitecturas orientadas al rendimiento y la escalabilidad.</p>
+                    <div class="tag-container">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Fastify</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Prisma</span>
+                    </div>
+                </div>
+
+                <!-- Aplicaciones Web -->
+                <div class="service-card">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="3" width="20" height="14" rx="2"/>
+                        <path d="M8 21h8M12 17v4"/>
+                    </svg>
+                    <h3>Aplicaciones Web</h3>
+                    <p>Interfaces de usuario modernas, accesibles y con carga rápida. Desde landing pages hasta plataformas complejas.</p>
+                    <div class="tag-container">
+                        <span class="tag">React</span>
+                        <span class="tag">Next.js</span>
+                        <span class="tag">TypeScript</span>
+                    </div>
+                </div>
+
+                <!-- Automatización con IA -->
+                <div class="service-card">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                    </svg>
+                    <h3>Automatización con IA</h3>
+                    <p>Integramos modelos de lenguaje en flujos de trabajo reales: clasificación, generación de contenido, asistentes y pipelines inteligentes.</p>
+                    <div class="tag-container">
+                        <span class="tag">Claude API</span>
+                        <span class="tag">OpenAI</span>
+                        <span class="tag">Python</span>
+                    </div>
+                </div>
+
+                <!-- Infraestructura -->
+                <div class="service-card">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12H3m18 0h-2M5.636 5.636L4.222 4.222M19.778 4.222l-1.414 1.414M12 3V1m0 22v-2M5.636 18.364l-1.414 1.414M19.778 19.778l-1.414-1.414"/>
+                        <circle cx="12" cy="12" r="4"/>
+                    </svg>
+                    <h3>Infraestructura</h3>
+                    <p>Desplegamos y mantenemos sistemas confiables con pipelines de CI/CD, contenedores y servidores dedicados.</p>
+                    <div class="tag-container">
+                        <span class="tag">Docker</span>
+                        <span class="tag">Hetzner</span>
+                        <span class="tag">GitHub Actions</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; 2026 Veta Studios. Todos los derechos reservados.</p>
+            <p>
+                <a href="/politicas-de-privacidad">Políticas de Privacidad</a> &nbsp;·&nbsp;
+                <a href="mailto:contacto@vetastudios.io">contacto@vetastudios.io</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.main-nav a').forEach(function(link) {
+            if (window.location.pathname.startsWith(link.getAttribute('href'))) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+
+</body>
+</html>
