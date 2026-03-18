@@ -12,6 +12,10 @@
             --accent-color: #E63946;
             --border-color: #2B2D42;
             --card-bg: #0A0A0C;
+            --card-border: #222222;
+            --tag-bg: #222222;
+            --tag-color: #D0D0D0;
+            --description-color: #888888;
         }
 
         * {
@@ -140,7 +144,7 @@
 
         .project-card {
             background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
+            border: 1px solid var(--card-border);
             border-radius: 8px;
             padding: 30px;
             transition: border-color 0.3s ease;
@@ -153,10 +157,11 @@
         .project-card h4 {
             font-size: 1.5rem;
             margin: 0 0 10px 0;
+            color: var(--text-color);
         }
 
         .project-card p {
-            color: #A0A0A0;
+            color: var(--description-color);
             font-size: 0.95rem;
             margin-bottom: 20px;
         }
@@ -171,9 +176,9 @@
         .tag {
             font-size: 0.75rem;
             padding: 4px 10px;
-            background-color: var(--border-color);
+            background-color: var(--tag-bg);
             border-radius: 4px;
-            color: #D0D0D0;
+            color: var(--tag-color);
             font-family: monospace;
         }
 
@@ -213,6 +218,41 @@
 
         footer a:hover {
             color: var(--text-color);
+        }
+
+        .services-section {
+            margin-top: 60px;
+        }
+
+        .service-card {
+            background-color: #111111;
+            border: 1px solid #222222;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            transition: border-color 0.3s ease;
+        }
+
+        .service-card:hover {
+            border-color: #4A4D6A;
+        }
+
+        .service-card svg {
+            width: 40px;
+            height: 40px;
+            fill: var(--text-color);
+            margin-bottom: 10px;
+        }
+
+        .service-card h5 {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            margin: 10px 0;
+        }
+
+        .service-card p {
+            color: #888888;
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -257,6 +297,47 @@
                         <span class="tag">Producto Propio</span>
                     </div>
                     <a href="https://kittypotgame.com" class="btn">Ver Proyecto</a>
+                </div>
+            </section>
+
+            <section class="services-section">
+                <h3>Servicios</h3>
+                <div class="service-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.372 0 0 5.372 0 12c0 6.628 5.372 12 12 12s12-5.372 12-12C24 5.372 18.628 0 12 0zm0 22c-5.523 0-10-4.477-10-10S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-15h2v5h-2zm0 6h2v2h-2z"/></svg>
+                    <h5>Desarrollo Web</h5>
+                    <p>Creación de sitios web responsivos y optimizados para SEO.</p>
+                    <div class="tag-container">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.372 0 0 5.372 0 12c0 6.628 5.372 12 12 12s12-5.372 12-12C24 5.372 18.628 0 12 0zm0 22c-5.523 0-10-4.477-10-10S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-15h2v5h-2zm0 6h2v2h-2z"/></svg>
+                    <h5>Consultoría</h5>
+                    <p>Asesoría en arquitectura de software y mejores prácticas.</p>
+                    <div class="tag-container">
+                        <span class="tag">Arquitectura</span>
+                        <span class="tag">Optimización</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.372 0 0 5.372 0 12c0 6.628 5.372 12 12 12s12-5.372 12-12C24 5.372 18.628 0 12 0zm0 22c-5.523 0-10-4.477-10-10S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-15h2v5h-2zm0 6h2v2h-2z"/></svg>
+                    <h5>Desarrollo Móvil</h5>
+                    <p>Aplicaciones móviles nativas y híbridas para iOS y Android.</p>
+                    <div class="tag-container">
+                        <span class="tag">iOS</span>
+                        <span class="tag">Android</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.372 0 0 5.372 0 12c0 6.628 5.372 12 12 12s12-5.372 12-12C24 5.372 18.628 0 12 0zm0 22c-5.523 0-10-4.477-10-10S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-15h2v5h-2zm0 6h2v2h-2z"/></svg>
+                    <h5>Soporte Técnico</h5>
+                    <p>Mantenimiento y soporte para aplicaciones existentes.</p>
+                    <div class="tag-container">
+                        <span class="tag">Mantenimiento</span>
+                        <span class="tag">Soporte</span>
+                    </div>
                 </div>
             </section>
         </main>
