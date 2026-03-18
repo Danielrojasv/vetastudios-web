@@ -193,6 +193,152 @@
             opacity: 0.8;
         }
 
+        .services-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+            padding: 20px 0;
+            margin-bottom: 80px;
+        }
+
+        .service-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            transition: border-color 0.3s ease;
+        }
+
+        .service-card:hover {
+            border-color: var(--accent-color);
+        }
+
+        .service-card h4 {
+            font-size: 1.2rem;
+            margin: 0 0 10px 0;
+        }
+
+        .service-card p {
+            color: #A0A0A0;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .tag-container {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            padding: 4px 10px;
+            background-color: var(--border-color);
+            border-radius: 4px;
+            color: #D0D0D0;
+            font-family: monospace;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            margin-bottom: 10px;
+        }
+
+        .clients-section {
+            width: 100%;
+            padding: 20px 0;
+            margin-bottom: 80px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .clients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .client-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .client-card h4 {
+            font-size: 1.2rem;
+            margin: 0 0 10px 0;
+        }
+
+        .client-card p {
+            color: #A0A0A0;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        .contact-section {
+            max-width: 600px;
+            width: 100%;
+            padding: 40px 20px;
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 80px;
+        }
+
+        .contact-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea {
+            background-color: #111111;
+            border: 1px solid #222222;
+            color: var(--text-color);
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #e53935;
+            outline: none;
+        }
+
+        button {
+            padding: 10px;
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
         footer {
             width: 100%;
             border-top: 1px solid var(--border-color);
@@ -244,20 +390,63 @@
                 </div>
             </section>
 
-            <section class="projects-section">
-                <h3>Productos Internos</h3>
-                
-                <div class="project-card">
-                    <h4>Kitty Pot</h4>
-                    <p>Una demostración técnica de nuestro dominio en motores físicos y optimización de recursos móviles. Un puzzle dinámico de colisiones y manejo de gravedad, empaquetado como una experiencia lúdica altamente adictiva.</p>
+            <section class="services-section">
+                <div class="service-card">
+                    <img src="icono-desarrollo.svg" alt="Desarrollo de Software" class="icon">
+                    <h4>Desarrollo de Software</h4>
+                    <p>Creación de aplicaciones personalizadas para satisfacer tus necesidades específicas.</p>
                     <div class="tag-container">
-                        <span class="tag">App Móvil</span>
-                        <span class="tag">Motor de Físicas</span>
-                        <span class="tag">Optimización 2D</span>
-                        <span class="tag">Producto Propio</span>
+                        <span class="tag">Web</span>
+                        <span class="tag">Móvil</span>
                     </div>
-                    <a href="https://kittypotgame.com" class="btn">Ver Proyecto</a>
                 </div>
+                <div class="service-card">
+                    <img src="icono-consultoria.svg" alt="Consultoría Técnica" class="icon">
+                    <h4>Consultoría Técnica</h4>
+                    <p>Asesoría experta para optimizar tus proyectos tecnológicos.</p>
+                    <div class="tag-container">
+                        <span class="tag">Estrategia</span>
+                        <span class="tag">Optimización</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="icono-ia.svg" alt="Inteligencia Artificial" class="icon">
+                    <h4>Inteligencia Artificial</h4>
+                    <p>Implementación de modelos predictivos y sistemas de aprendizaje automático.</p>
+                    <div class="tag-container">
+                        <span class="tag">ML</span>
+                        <span class="tag">NLP</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="clients-section">
+                <h3 class="section-title">Con quienes hemos trabajado</h3>
+                <div class="clients-grid">
+                    <div class="client-card">
+                        <h4>Neuralink</h4>
+                        <p>Integración de interfaces cerebro-computadora</p>
+                    </div>
+                    <div class="client-card">
+                        <h4>DeepMind</h4>
+                        <p>Desarrollo de algoritmos de aprendizaje automático</p>
+                    </div>
+                    <div class="client-card">
+                        <h4>SpaceX</h4>
+                        <p>Optimización de sistemas de telemetría</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section">
+                <h2>Hablemos</h2>
+                <h3>contacto@vetastudios.io</h3>
+                <form action="https://formspree.io/f/PLACEHOLDER" method="POST">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
             </section>
         </main>
     </div>
