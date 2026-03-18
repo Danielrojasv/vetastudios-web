@@ -7,6 +7,66 @@
     <meta name="description" content="Servicios de ingeniería de software para productos que necesitan escalar.">
     <link rel="stylesheet" href="/css/shared.css">
     <style>
+        :root {
+            --bg-color: #000000;
+            --text-color: #F5F5F5;
+            --accent-color: #E63946;
+            --border-color: #2B2D42;
+            --card-bg: #0A0A0C;
+            --color-text-muted: #A0A0A0;
+            --color-border: #2B2D42;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            padding: 60px 20px;
+            flex: 1;
+        }
+
+        header.site-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 60px;
+        }
+
+        .logo-img {
+            height: 40px;
+            width: auto;
+            display: block;
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin: 0;
+            letter-spacing: -0.5px;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
         .hero {
             margin-bottom: 60px;
         }
@@ -71,6 +131,42 @@
             color: #D0D0D0;
             font-family: monospace;
         }
+
+        .clients-section {
+            margin-top: 80px;
+        }
+
+        .clients-section h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0 0 40px 0;
+            line-height: 1.2;
+            letter-spacing: -0.5px;
+        }
+
+        .clients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .client-card {
+            background-color: #111111;
+            border: 1px solid #222222;
+            border-radius: 8px;
+            padding: 30px;
+        }
+
+        .client-card h3 {
+            font-size: 1.3rem;
+            margin: 0 0 15px 0;
+        }
+
+        .client-card p {
+            color: var(--color-text-muted);
+            font-size: 0.95rem;
+            margin: 0;
+        }
     </style>
 </head>
 <body>
@@ -99,48 +195,52 @@
                         <path d="M4 12H20" stroke="#F5F5F5" stroke-width="2"/>
                     </svg>
                     <h3>Desarrollo de APIs</h3>
-                    <p>Arquitectura e implementación de interfaces programáticas para integración de sistemas, con énfasis en seguridad, latencia mínima y documentación OpenAPI.</p>
+                    <p>Arquitectura y construcción de interfaces programáticas robustas, seguras y escalables para integración de sistemas.</p>
                     <div class="tech-list">
                         <span class="tech-tag">Node.js</span>
                         <span class="tech-tag">Python</span>
-                        <span class="tech-tag">REST/GraphQL</span>
+                        <span class="tech-tag">GraphQL</span>
                     </div>
                 </div>
 
                 <div class="service-card">
                     <svg class="service-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#F5F5F5" stroke-width="2"/>
-                        <path d="M12 7V12L15 15" stroke="#F5F5F5" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#F5F5F5" stroke-width="2"/>
+                        <path d="M8 12H16" stroke="#F5F5F5" stroke-width="2"/>
+                        <path d="M12 16V8" stroke="#F5F5F5" stroke-width="2"/>
                     </svg>
                     <h3>Aplicaciones Web</h3>
-                    <p>Desarrollo de interfaces web modernas con enfoque en rendimiento, accesibilidad y compatibilidad cross-browser. Arquitecturas SPA y PWA.</p>
+                    <p>Desarrollo frontend y backend de aplicaciones web modernas, responsivas y optimizadas para múltiples dispositivos.</p>
                     <div class="tech-list">
                         <span class="tech-tag">React</span>
                         <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">WebSockets</span>
+                        <span class="tech-tag">Next.js</span>
                     </div>
                 </div>
 
                 <div class="service-card">
                     <svg class="service-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 7H15M7 10H17M9 13H15M12 3V21M3 12H21" stroke="#F5F5F5" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15" stroke="#F5F5F5" stroke-width="2"/>
+                        <path d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z" stroke="#F5F5F5" stroke-width="2"/>
+                        <path d="M9 14H15" stroke="#F5F5F5" stroke-width="2"/>
+                        <path d="M9 18H15" stroke="#F5F5F5" stroke-width="2"/>
                     </svg>
                     <h3>Automatización con IA</h3>
-                    <p>Implementación de modelos de machine learning para automatización de procesos, análisis predictivo y optimización de recursos empresariales.</p>
+                    <p>Implementación de soluciones inteligentes basadas en machine learning para automatizar procesos y análisis de datos.</p>
                     <div class="tech-list">
                         <span class="tech-tag">Python</span>
                         <span class="tech-tag">TensorFlow</span>
-                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">OpenAI API</span>
                     </div>
                 </div>
 
                 <div class="service-card">
                     <svg class="service-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 6H20M4 12H20M4 18H20" stroke="#F5F5F5" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M9 6V18" stroke="#F5F5F5" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M4 6H20M4 12H20M4 18H20" stroke="#F5F5F5" stroke-width="2"/>
+                        <path d="M12 6V18" stroke="#F5F5F5" stroke-width="2"/>
                     </svg>
-                    <h3>Infraestructura</h3>
-                    <p>Diseño e implementación de arquitecturas cloud escalables, sistemas de CI/CD y estrategias de despliegue para alta disponibilidad.</p>
+                    <h3>Infraestructura Cloud</h3>
+                    <p>Diseño e implementación de arquitecturas cloud escalables, seguras y optimizadas para alta disponibilidad.</p>
                     <div class="tech-list">
                         <span class="tech-tag">AWS</span>
                         <span class="tech-tag">Docker</span>
@@ -148,16 +248,26 @@
                     </div>
                 </div>
             </section>
+
+            <section class="clients-section">
+                <h2>Con quienes hemos trabajado.</h2>
+                <div class="clients-grid">
+                    <div class="client-card">
+                        <h3>Mercado Libre</h3>
+                        <p>Desarrollo de microservicios para optimización de rutas de entrega en tiempo real.</p>
+                    </div>
+                    <div class="client-card">
+                        <h3>Falabella Tecnología</h3>
+                        <p>Arquitectura de plataforma de análisis predictivo para gestión de inventario.</p>
+                    </div>
+                    <div class="client-card">
+                        <h3>CrediTú</h3>
+                        <p>Implementación de sistema de autenticación biométrica para aplicaciones móviles.</p>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
-
-    <footer class="site-footer">
-        <div>&copy; 2026 Veta Studios. Todos los derechos reservados.</div>
-        <div>
-            <a href="/politicas-de-privacidad">Políticas de Privacidad</a> | 
-            <a href="mailto:contacto@vetastudios.io">Contacto</a>
-        </div>
-    </footer>
 
 </body>
 </html>
