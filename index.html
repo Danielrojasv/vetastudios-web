@@ -11,7 +11,9 @@
             --text-color: #F5F5F5;
             --accent-color: #E63946;
             --border-color: #2B2D42;
-            --card-bg: #0A0A0C;
+            --card-bg: #111111; /* Fondo de los cards */
+            --tag-bg: #222222; /* Fondo de los tags */
+            --tag-text: #ffffff; /* Color del texto de los tags */
         }
 
         * {
@@ -171,9 +173,9 @@
         .tag {
             font-size: 0.75rem;
             padding: 4px 10px;
-            background-color: var(--border-color);
+            background-color: var(--tag-bg);
             border-radius: 4px;
-            color: #D0D0D0;
+            color: var(--tag-text);
             font-family: monospace;
         }
 
@@ -190,6 +192,82 @@
         }
 
         .btn:hover {
+            opacity: 0.8;
+        }
+
+        /* Sección de contacto */
+        .contact-section {
+            margin-bottom: 80px;
+        }
+
+        .contact-section h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+            line-height: 1.2;
+            letter-spacing: -1px;
+        }
+
+        .contact-section p.subtitle {
+            color: #A0A0A0;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .contact-form {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            color: #A0A0A0;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            background-color: #111111;
+            border: 1px solid #222222;
+            border-radius: 4px;
+            color: var(--text-color);
+            font-family: inherit;
+            font-size: 1rem;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #e53935;
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background-color: var(--text-color);
+            color: var(--bg-color);
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .submit-btn:hover {
             opacity: 0.8;
         }
 
@@ -258,6 +336,31 @@
                     </div>
                     <a href="https://kittypotgame.com" class="btn">Ver Proyecto</a>
                 </div>
+            </section>
+
+            <!-- Sección de Contacto -->
+            <section class="contact-section">
+                <h2>Hablemos.</h2>
+                <p class="subtitle">contacto@vetastudios.io</p>
+                
+                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Enviar</button>
+                </form>
             </section>
         </main>
     </div>
