@@ -214,6 +214,50 @@
         footer a:hover {
             color: var(--text-color);
         }
+
+        .services-section {
+            margin-top: 60px;
+        }
+
+        .service-card {
+            background-color: #111111;
+            border: 1px solid #222222;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .service-title {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .service-description {
+            color: #A0A0A0;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .service-tag {
+            background-color: #222222;
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            display: inline-block;
+            margin: 2px;
+        }
     </style>
 </head>
 <body>
@@ -257,6 +301,42 @@
                         <span class="tag">Producto Propio</span>
                     </div>
                     <a href="https://kittypotgame.com" class="btn">Ver Proyecto</a>
+                </div>
+            </section>
+
+            <section class="services-section">
+                <h3>Servicios</h3>
+                <div class="service-card">
+                    <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                    <h4 class="service-title">Desarrollo Web</h4>
+                    <p class="service-description">Creamos sitios web responsivos y optimizados para una experiencia de usuario excepcional.</p>
+                    <span class="service-tag">HTML</span>
+                    <span class="service-tag">CSS</span>
+                    <span class="service-tag">JavaScript</span>
+                </div>
+                <div class="service-card">
+                    <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                    <h4 class="service-title">Aplicaciones Móviles</h4>
+                    <p class="service-description">Desarrollamos aplicaciones móviles nativas y multiplataforma para iOS y Android.</p>
+                    <span class="service-tag">iOS</span>
+                    <span class="service-tag">Android</span>
+                    <span class="service-tag">React Native</span>
+                </div>
+                <div class="service-card">
+                    <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                    <h4 class="service-title">Consultoría Técnica</h4>
+                    <p class="service-description">Ofrecemos asesoría en arquitectura de software y mejores prácticas de desarrollo.</p>
+                    <span class="service-tag">Arquitectura</span>
+                    <span class="service-tag">DevOps</span>
+                    <span class="service-tag">Seguridad</span>
+                </div>
+                <div class="service-card">
+                    <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                    <h4 class="service-title">Mantenimiento de Software</h4>
+                    <p class="service-description">Brindamos soporte y mantenimiento continuo para asegurar el rendimiento óptimo de tus aplicaciones.</p>
+                    <span class="service-tag">Soporte</span>
+                    <span class="service-tag">Actualizaciones</span>
+                    <span class="service-tag">Optimización</span>
                 </div>
             </section>
         </main>
