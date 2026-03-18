@@ -193,6 +193,51 @@
             opacity: 0.8;
         }
 
+        .clientes-section {
+            margin-bottom: 80px;
+        }
+
+        .clientes-section h3 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #666;
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .clientes-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .clientes-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .cliente-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .cliente-card h4 {
+            font-size: 1.2rem;
+            margin: 0 0 10px 0;
+        }
+
+        .cliente-card p {
+            color: #A0A0A0;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
         footer {
             width: 100%;
             border-top: 1px solid var(--border-color);
@@ -213,40 +258,6 @@
 
         footer a:hover {
             color: var(--text-color);
-        }
-
-        .servicios-section {
-            margin: 60px 0;
-        }
-
-        .service-card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            transition: border-color 0.3s ease;
-        }
-
-        .service-card:hover {
-            border-color: #4A4D6A;
-        }
-
-        .service-card h4 {
-            font-size: 1.2rem;
-            margin: 0 0 10px 0;
-        }
-
-        .service-card p {
-            color: #A0A0A0;
-            font-size: 0.9rem;
-            margin: 0 0 10px 0;
-        }
-
-        .service-icon {
-            width: 24px;
-            height: 24px;
-            margin-right: 10px;
         }
     </style>
 </head>
@@ -278,46 +289,6 @@
                 </div>
             </section>
 
-            <section class="servicios-section">
-                <h3>Servicios</h3>
-                <div class="service-card">
-                    <h4><img src="icon-api.svg" alt="Ícono de API" class="service-icon">Desarrollo de APIs</h4>
-                    <p>Creación de interfaces robustas y escalables para la integración de sistemas.</p>
-                    <div class="tag-container">
-                        <span class="tag">Node.js</span>
-                        <span class="tag">Express</span>
-                        <span class="tag">REST</span>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <h4><img src="icon-web.svg" alt="Ícono de Aplicaciones Web" class="service-icon">Aplicaciones Web</h4>
-                    <p>Desarrollo de aplicaciones web interactivas y responsivas.</p>
-                    <div class="tag-container">
-                        <span class="tag">React</span>
-                        <span class="tag">Next.js</span>
-                        <span class="tag">CSS</span>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <h4><img src="icon-ai.svg" alt="Ícono de IA" class="service-icon">Automatización con IA</h4>
-                    <p>Implementación de soluciones de inteligencia artificial para optimizar procesos.</p>
-                    <div class="tag-container">
-                        <span class="tag">Python</span>
-                        <span class="tag">TensorFlow</span>
-                        <span class="tag">Machine Learning</span>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <h4><img src="icon-cloud.svg" alt="Ícono de Infraestructura Cloud" class="service-icon">Infraestructura Cloud</h4>
-                    <p>Diseño y gestión de arquitecturas en la nube para escalabilidad y seguridad.</p>
-                    <div class="tag-container">
-                        <span class="tag">AWS</span>
-                        <span class="tag">Azure</span>
-                        <span class="tag">Docker</span>
-                    </div>
-                </div>
-            </section>
-
             <section class="projects-section">
                 <h3>Productos Internos</h3>
                 
@@ -331,6 +302,24 @@
                         <span class="tag">Producto Propio</span>
                     </div>
                     <a href="https://kittypotgame.com" class="btn">Ver Proyecto</a>
+                </div>
+            </section>
+
+            <section class="clientes-section">
+                <h3>Clientes</h3>
+                <div class="clientes-grid">
+                    <div class="cliente-card">
+                        <h4>Mercado Libre</h4>
+                        <p>Desarrollo de soluciones de backend escalables</p>
+                    </div>
+                    <div class="cliente-card">
+                        <h4>Falabella Tecnología</h4>
+                        <p>Arquitectura de microservicios y APIs</p>
+                    </div>
+                    <div class="cliente-card">
+                        <h4>CrediTú</h4>
+                        <p>Implementación de sistemas de autenticación</p>
+                    </div>
                 </div>
             </section>
         </main>
