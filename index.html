@@ -214,6 +214,40 @@
         footer a:hover {
             color: var(--text-color);
         }
+
+        .services-section {
+            margin-top: 60px;
+        }
+
+        .service-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            transition: border-color 0.3s ease;
+        }
+
+        .service-card:hover {
+            border-color: var(--accent-color);
+        }
+
+        .service-card svg {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 15px;
+        }
+
+        .service-card h4 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .service-card p {
+            color: #A0A0A0;
+            font-size: 0.9rem;
+            margin: 0 0 10px 0;
+        }
     </style>
 </head>
 <body>
@@ -257,6 +291,47 @@
                         <span class="tag">Producto Propio</span>
                     </div>
                     <a href="https://kittypotgame.com" class="btn">Ver Proyecto</a>
+                </div>
+            </section>
+
+            <section class="services-section">
+                <h3>Servicios</h3>
+                <div class="service-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0zm0 22c-5.523 0-10-4.477-10-10S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-15h-2v6h2v-6zm2 0h-2v6h2v-6z"/></svg>
+                    <h4>Desarrollo Web</h4>
+                    <p>Creación de sitios web responsivos y optimizados para SEO.</p>
+                    <div class="tag-container">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0zm0 22c-5.523 0-10-4.477-10-10S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-15h-2v6h2v-6zm2 0h-2v6h2v-6z"/></svg>
+                    <h4>Aplicaciones Móviles</h4>
+                    <p>Desarrollo de aplicaciones nativas y multiplataforma.</p>
+                    <div class="tag-container">
+                        <span class="tag">React Native</span>
+                        <span class="tag">Flutter</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0zm0 22c-5.523 0-10-4.477-10-10S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-15h-2v6h2v-6zm2 0h-2v6h2v-6z"/></svg>
+                    <h4>Consultoría Técnica</h4>
+                    <p>Asesoría en arquitectura de software y mejores prácticas.</p>
+                    <div class="tag-container">
+                        <span class="tag">Arquitectura</span>
+                        <span class="tag">DevOps</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0zm0 22c-5.523 0-10-4.477-10-10S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-15h-2v6h2v-6zm2 0h-2v6h2v-6z"/></svg>
+                    <h4>Diseño UI/UX</h4>
+                    <p>Diseño de interfaces centradas en el usuario y experiencias atractivas.</p>
+                    <div class="tag-container">
+                        <span class="tag">Figma</span>
+                        <span class="tag">Prototipado</span>
+                    </div>
                 </div>
             </section>
         </main>
