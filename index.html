@@ -7,10 +7,10 @@
     <meta name="description" content="Estudio de ingeniería de software enfocado en arquitecturas sólidas, productos digitales y experiencias interactivas. Desde Puerto Montt, Chile.">
     <style>
         :root {
-            --bg-color: #000000;
+            --bg-color: #111111;
             --text-color: #F5F5F5;
-            --accent-color: #E63946;
-            --border-color: #2B2D42;
+            --accent-color: #e53935;
+            --border-color: #222222;
             --card-bg: #0A0A0C;
         }
 
@@ -173,7 +173,7 @@
             padding: 4px 10px;
             background-color: var(--border-color);
             border-radius: 4px;
-            color: #D0D0D0;
+            color: #ffffff;
             font-family: monospace;
         }
 
@@ -213,6 +213,39 @@
 
         footer a:hover {
             color: var(--text-color);
+        }
+
+        .services-section {
+            margin: 60px 0;
+        }
+
+        .service-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            transition: border-color 0.3s ease;
+        }
+
+        .service-card:hover {
+            border-color: var(--accent-color);
+        }
+
+        .service-card svg {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        .service-card h5 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .service-card p {
+            color: #A0A0A0;
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -257,6 +290,54 @@
                         <span class="tag">Producto Propio</span>
                     </div>
                     <a href="https://kittypotgame.com" class="btn">Ver Proyecto</a>
+                </div>
+            </section>
+
+            <section class="services-section">
+                <h3>Servicios</h3>
+                <div class="service-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                    </svg>
+                    <h5>Desarrollo Web</h5>
+                    <p>Creación de sitios web responsivos y optimizados.</p>
+                    <div class="tag-container">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                    </svg>
+                    <h5>Aplicaciones Móviles</h5>
+                    <p>Desarrollo de apps nativas y multiplataforma.</p>
+                    <div class="tag-container">
+                        <span class="tag">iOS</span>
+                        <span class="tag">Android</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                    </svg>
+                    <h5>Consultoría Técnica</h5>
+                    <p>Asesoría en arquitectura de software y mejores prácticas.</p>
+                    <div class="tag-container">
+                        <span class="tag">Auditoría</span>
+                        <span class="tag">Optimización</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                    </svg>
+                    <h5>Soporte Técnico</h5>
+                    <p>Mantenimiento y soporte para aplicaciones existentes.</p>
+                    <div class="tag-container">
+                        <span class="tag">Mantenimiento</span>
+                        <span class="tag">Soporte</span>
+                    </div>
                 </div>
             </section>
         </main>
