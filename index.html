@@ -8,10 +8,11 @@
     <style>
         :root {
             --bg-color: #000000;
-            --text-color: #F5F5F5;
-            --accent-color: #E63946;
-            --border-color: #2B2D42;
-            --card-bg: #111111; /* Actualizado para la sección de servicios */
+            --text-color: #ffffff;
+            --text-secondary: #888888;
+            --accent-color: #e53935;
+            --border-color: #222222;
+            --card-bg: #111111;
         }
 
         * {
@@ -21,7 +22,7 @@
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -72,7 +73,7 @@
 
         .hero p {
             font-size: 1.1rem;
-            color: #A0A0A0;
+            color: var(--text-secondary);
             max-width: 650px;
         }
 
@@ -85,7 +86,7 @@
             align-items: center;
             gap: 8px;
             font-size: 0.9rem;
-            color: #888;
+            color: var(--text-secondary);
             margin-top: 15px;
             font-family: monospace;
             border: 1px solid var(--border-color);
@@ -109,8 +110,7 @@
         .about-box {
             background-color: var(--card-bg);
             padding: 30px;
-            border-left: 3px solid var(--accent-color);
-            border-radius: 0 8px 8px 0;
+            border: 1px solid var(--border-color);
         }
 
         .about-box h3 {
@@ -123,40 +123,41 @@
         }
 
         .about-box p {
-            color: #A0A0A0;
+            color: var(--text-secondary);
             font-size: 0.95rem;
             margin: 0;
         }
 
-        .projects-section h3 {
+        .projects-section h3,
+        .services-section h3,
+        .clients-section h3 {
             font-size: 1.2rem;
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: #666;
+            color: var(--text-secondary);
             margin-bottom: 30px;
             border-bottom: 1px solid var(--border-color);
             padding-bottom: 10px;
         }
 
-        .project-card {
+        .project-card,
+        .service-card,
+        .client-card {
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
-            border-radius: 8px;
             padding: 30px;
-            transition: border-color 0.3s ease;
+            margin-bottom: 20px;
         }
 
-        .project-card:hover {
-            border-color: #4A4D6A;
-        }
-
-        .project-card h4 {
+        .project-card h4,
+        .service-card h4 {
             font-size: 1.5rem;
             margin: 0 0 10px 0;
         }
 
-        .project-card p {
-            color: #A0A0A0;
+        .project-card p,
+        .service-card p {
+            color: var(--text-secondary);
             font-size: 0.95rem;
             margin-bottom: 20px;
         }
@@ -172,7 +173,6 @@
             font-size: 0.75rem;
             padding: 4px 10px;
             background-color: var(--border-color);
-            border-radius: 4px;
             color: #D0D0D0;
             font-family: monospace;
         }
@@ -184,91 +184,81 @@
             color: var(--bg-color);
             text-decoration: none;
             font-weight: 600;
-            border-radius: 4px;
             font-size: 0.9rem;
-            transition: opacity 0.2s;
         }
 
-        .btn:hover {
-            opacity: 0.8;
+        .clients-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
         }
 
-        /* Estilos para la sección de contacto */
-        .contact-section {
-            margin-top: 80px;
-            margin-bottom: 60px;
+        @media (max-width: 768px) {
+            .clients-grid {
+                grid-template-columns: 1fr 1fr;
+            }
         }
 
-        .contact-section h2 {
-            font-size: 2rem;
-            font-weight: 700;
-            margin: 0 0 10px 0;
-            line-height: 1.2;
-            letter-spacing: -1px;
+        @media (max-width: 480px) {
+            .clients-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
-        .contact-section p {
-            color: #A0A0A0;
-            font-size: 1rem;
-            margin-bottom: 30px;
+        .client-card {
+            text-align: center;
+        }
+
+        .client-logo {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 15px auto;
         }
 
         .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            max-width: 600px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 30px;
         }
 
-        .form-group {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .form-group label {
-            font-size: 0.9rem;
-            color: #A0A0A0;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            background-color: #111111;
-            border: 1px solid #222222;
-            border-radius: 4px;
-            padding: 12px 15px;
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
             color: var(--text-color);
-            font-family: inherit;
+            font-size: 0.95rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
             font-size: 1rem;
-            transition: border-color 0.3s ease;
         }
 
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #e53935;
-        }
-
-        .form-group textarea {
+        .contact-form textarea {
             min-height: 150px;
             resize: vertical;
         }
 
-        .submit-btn {
-            align-self: flex-start;
-            padding: 12px 30px;
-            background-color: var(--text-color);
+        .contact-form button {
+            padding: 12px 24px;
+            background-color: var(--accent-color);
             color: var(--bg-color);
             border: none;
-            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
             font-weight: 600;
             font-size: 1rem;
             cursor: pointer;
-            transition: opacity 0.2s;
         }
 
-        .submit-btn:hover {
-            opacity: 0.8;
+        .contact-form button:hover {
+            opacity: 0.9;
         }
 
         footer {
@@ -277,16 +267,15 @@
             padding: 30px 20px;
             text-align: center;
             font-size: 0.85rem;
-            color: #666;
+            color: var(--text-secondary);
             display: flex;
             flex-direction: column;
             gap: 10px;
         }
 
         footer a {
-            color: #A0A0A0;
+            color: var(--text-secondary);
             text-decoration: none;
-            transition: color 0.2s;
         }
 
         footer a:hover {
@@ -322,45 +311,79 @@
                 </div>
             </section>
 
-            <section class="projects-section">
-                <h3>Productos Internos</h3>
+            <section class="services-section">
+                <h3>Servicios</h3>
                 
-                <div class="project-card">
-                    <h4>Kitty Pot</h4>
-                    <p>Una demostración técnica de nuestro dominio en motores físicos y optimización de recursos móviles. Un puzzle dinámico de colisiones y manejo de gravedad, empaquetado como una experiencia lúdica altamente adictiva.</p>
+                <div class="service-card">
+                    <h4>Desarrollo de Software a Medida</h4>
+                    <p>Construimos aplicaciones web y móviles con arquitecturas escalables, priorizando la mantenibilidad y el rendimiento. Tecnologías como React, Node.js, Kotlin y Swift son parte de nuestro stack diario.</p>
                     <div class="tag-container">
-                        <span class="tag">App Móvil</span>
-                        <span class="tag">Motor de Físicas</span>
-                        <span class="tag">Optimización 2D</span>
-                        <span class="tag">Producto Propio</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Kotlin</span>
+                        <span class="tag">Swift</span>
                     </div>
-                    <a href="https://kittypotgame.com" class="btn">Ver Proyecto</a>
+                </div>
+
+                <div class="service-card">
+                    <h4>Consultoría Técnica</h4>
+                    <p>Asesoramos equipos en la adopción de buenas prácticas de ingeniería, arquitectura de sistemas distribuidos, optimización de infraestructura y estrategias de testing automatizado.</p>
+                    <div class="tag-container">
+                        <span class="tag">Arquitectura</span>
+                        <span class="tag">DevOps</span>
+                        <span class="tag">Testing</span>
+                        <span class="tag">CI/CD</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <h4>Producto Digital</h4>
+                    <p>Diseñamos y desarrollamos productos digitales desde cero, combinando diseño de experiencia con implementación técnica rigurosa. Nuestro enfoque lean permite lanzar MVPs en semanas.</p>
+                    <div class="tag-container">
+                        <span class="tag">UX</span>
+                        <span class="tag">MVP</span>
+                        <span class="tag">Figma</span>
+                        <span class="tag">Prototipado</span>
+                    </div>
                 </div>
             </section>
 
-            <!-- Sección de contacto -->
-            <section class="contact-section">
-                <h2>Hablemos.</h2>
-                <p>contacto@vetastudios.io</p>
+            <section class="clients-section">
+                <h3>Clientes</h3>
                 
-                <form class="contact-form" method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
-                    <div class="form-group">
+                <div class="clients-grid">
+                    <div class="client-card">
+                        <img src="client-a.png" alt="Cliente A" class="client-logo">
+                        <p>Cliente A</p>
+                    </div>
+                    <div class="client-card">
+                        <img src="client-b.png" alt="Cliente B" class="client-logo">
+                        <p>Cliente B</p>
+                    </div>
+                    <div class="client-card">
+                        <img src="client-c.png" alt="Cliente C" class="client-logo">
+                        <p>Cliente C</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section">
+                <h3>Contacto</h3>
+                
+                <div class="contact-form">
+                    <form>
                         <label for="name">Nombre</label>
                         <input type="text" id="name" name="name" required>
-                    </div>
-                    
-                    <div class="form-group">
+                        
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" required>
-                    </div>
-                    
-                    <div class="form-group">
+                        
                         <label for="message">Mensaje</label>
                         <textarea id="message" name="message" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="submit-btn">Enviar</button>
-                </form>
+                        
+                        <button type="submit">Enviar Mensaje</button>
+                    </form>
+                </div>
             </section>
         </main>
     </div>
