@@ -8,10 +8,10 @@
     <style>
         :root {
             --bg-color: #000000;
-            --text-color: #F5F5F5;
-            --accent-color: #E63946;
-            --border-color: #2B2D42;
-            --card-bg: #0A0A0C;
+            --text-color: #ffffff;
+            --accent-color: #e53935;
+            --border-color: #222222;
+            --card-bg: #111111;
             --service-card-bg: #111111;
             --service-border-color: #222222;
             --service-tag-bg: #222222;
@@ -32,7 +32,7 @@
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -83,7 +83,7 @@
 
         .hero p {
             font-size: 1.1rem;
-            color: #A0A0A0;
+            color: #888888;
             max-width: 650px;
         }
 
@@ -96,7 +96,7 @@
             align-items: center;
             gap: 8px;
             font-size: 0.9rem;
-            color: #888;
+            color: #888888;
             margin-top: 15px;
             font-family: monospace;
             border: 1px solid var(--border-color);
@@ -134,115 +134,163 @@
         }
 
         .about-box p {
-            color: #A0A0A0;
+            color: #888888;
             font-size: 0.95rem;
             margin: 0;
         }
 
-        .projects-section h3 {
+        .services-section {
+            margin-bottom: 80px;
+        }
+
+        .services-section h3 {
             font-size: 1.2rem;
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: #666;
+            color: #888888;
             margin-bottom: 30px;
             border-bottom: 1px solid var(--border-color);
             padding-bottom: 10px;
         }
 
-        .project-card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .service-card {
+            background-color: var(--service-card-bg);
+            border: 1px solid var(--service-border-color);
             border-radius: 8px;
             padding: 30px;
-            transition: border-color 0.3s ease;
         }
 
-        .project-card:hover {
-            border-color: #4A4D6A;
+        .service-card h4 {
+            font-size: 1.3rem;
+            margin: 0 0 15px 0;
+            color: var(--text-color);
         }
 
-        .project-card h4 {
-            font-size: 1.5rem;
-            margin: 0 0 10px 0;
-        }
-
-        .project-card p {
-            color: #A0A0A0;
+        .service-card p {
+            color: #888888;
             font-size: 0.95rem;
             margin-bottom: 20px;
         }
 
-        .tag-container {
+        .service-tags {
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
-            margin-bottom: 25px;
-        }
-
-        .tag {
-            font-size: 0.75rem;
-            padding: 4px 10px;
-            background-color: var(--border-color);
-            border-radius: 4px;
-            color: #D0D0D0;
-            font-family: monospace;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: var(--text-color);
-            color: var(--bg-color);
-            text-decoration: none;
-            font-weight: 600;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            transition: opacity 0.2s;
-        }
-
-        .btn:hover {
-            opacity: 0.8;
-        }
-
-        .contact-section {
-            margin-top: 80px;
-            padding: 30px;
-            background-color: var(--form-bg);
-            border-left: 4px solid var(--form-focus-border);
-            border-radius: 0 8px 8px 0;
-        }
-
-        .contact-section h3 {
-            margin-top: 0;
-            font-size: 1.3rem;
-            color: var(--form-text);
             margin-bottom: 20px;
         }
 
-        .contact-form {
-            display: flex;
-            flex-direction: column;
+        .service-tag {
+            font-size: 0.75rem;
+            padding: 4px 10px;
+            background-color: var(--service-tag-bg);
+            border-radius: 4px;
+            color: #888888;
+            font-family: monospace;
+        }
+
+        .clients-section {
+            margin-bottom: 80px;
+        }
+
+        .clients-section h3 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #888888;
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .clients-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
         }
 
+        @media (max-width: 768px) {
+            .clients-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .client-card {
+            background-color: var(--client-card-bg);
+            border: 1px solid var(--client-border-color);
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            transition: border-color 0.3s ease;
+        }
+
+        .client-card:hover {
+            border-color: var(--client-accent-border);
+        }
+
+        .client-card h4 {
+            font-size: 1.3rem;
+            margin: 0 0 15px 0;
+            color: var(--text-color);
+        }
+
+        .client-card p {
+            color: #888888;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .form-section {
+            margin-bottom: 80px;
+        }
+
+        .form-section h3 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #888888;
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .contact-form {
+            background-color: var(--form-bg);
+            border: 1px solid var(--form-border);
+            border-radius: 8px;
+            padding: 30px;
+        }
+
         .form-group {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
+            margin-bottom: 20px;
         }
 
         .form-group label {
-            font-size: 0.9rem;
-            color: var(--form-text);
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            color: #888888;
         }
 
         .form-group input,
         .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--form-border);
+            border-radius: 4px;
             background-color: var(--form-bg);
             color: var(--form-text);
-            border: 1px solid var(--form-border);
-            padding: 12px 15px;
-            border-radius: 4px;
             font-family: 'Inter', sans-serif;
             font-size: 1rem;
         }
@@ -253,25 +301,20 @@
             border-color: var(--form-focus-border);
         }
 
-        .form-group textarea {
-            min-height: 150px;
-            resize: vertical;
-        }
-
-        .submit-btn {
-            align-self: flex-start;
-            padding: 12px 25px;
+        .form-button {
             background-color: var(--form-button-bg);
-            color: #ffffff;
+            color: #000000;
             border: none;
+            padding: 12px 24px;
             border-radius: 4px;
             font-weight: 600;
             font-size: 1rem;
             cursor: pointer;
             transition: opacity 0.2s;
+            font-family: 'Inter', sans-serif;
         }
 
-        .submit-btn:hover {
+        .form-button:hover {
             opacity: 0.9;
         }
 
@@ -281,14 +324,14 @@
             padding: 30px 20px;
             text-align: center;
             font-size: 0.85rem;
-            color: #666;
+            color: #888888;
             display: flex;
             flex-direction: column;
             gap: 10px;
         }
 
         footer a {
-            color: #A0A0A0;
+            color: #888888;
             text-decoration: none;
             transition: color 0.2s;
         }
@@ -299,7 +342,6 @@
     </style>
 </head>
 <body>
-
     <div class="container">
         <header>
             <img src="logo-veta-blanco.png" alt="Logo de Veta Studios" class="logo-img">
@@ -317,47 +359,91 @@
 
             <section class="about-section">
                 <div class="about-box">
-                    <h3>Nuestra Misión</h3>
+                    <h3>Misión</h3>
                     <p>Desarrollar software de alto rendimiento que resuelva problemas complejos con elegancia. Transformamos la lógica computacional y la ingeniería de datos en productos funcionales, estables y optimizados, operando con estándares globales desde el sur de Chile.</p>
                 </div>
                 <div class="about-box">
-                    <h3>Nuestra Visión</h3>
+                    <h3>Visión</h3>
                     <p>Consolidarnos como un referente tecnológico en la Patagonia chilena, demostrando que mediante código limpio, precisión matemática y un enfoque analítico, se pueden crear herramientas, aplicaciones y plataformas competitivas a nivel internacional.</p>
                 </div>
             </section>
 
-            <section class="projects-section">
-                <h3>Productos Internos</h3>
-                
-                <div class="project-card">
-                    <h4>Kitty Pot</h4>
-                    <p>Una demostración técnica de nuestro dominio en motores físicos y optimización de recursos móviles. Un puzzle dinámico de colisiones y manejo de gravedad, empaquetado como una experiencia lúdica altamente adictiva.</p>
-                    <div class="tag-container">
-                        <span class="tag">App Móvil</span>
-                        <span class="tag">Motor de Físicas</span>
-                        <span class="tag">Optimización 2D</span>
-                        <span class="tag">Producto Propio</span>
+            <section class="services-section">
+                <h3>Servicios</h3>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h4>Desarrollo de APIs</h4>
+                        <p>Arquitectura de interfaces RESTful y GraphQL con enfoque en escalabilidad, seguridad y bajo tiempo de respuesta.</p>
+                        <div class="service-tags">
+                            <span class="service-tag">Node.js</span>
+                            <span class="service-tag">Python</span>
+                            <span class="service-tag">Express</span>
+                        </div>
                     </div>
-                    <a href="https://kittypotgame.com" class="btn">Ver Proyecto</a>
+                    <div class="service-card">
+                        <h4>Aplicaciones Web</h4>
+                        <p>Frontend y backend integrados para experiencias web modernas, responsivas y de alto rendimiento.</p>
+                        <div class="service-tags">
+                            <span class="service-tag">React</span>
+                            <span class="service-tag">TypeScript</span>
+                            <span class="service-tag">Next.js</span>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <h4>Automatización con IA</h4>
+                        <p>Implementación de modelos predictivos y sistemas autónomos para optimizar procesos empresariales.</p>
+                        <div class="service-tags">
+                            <span class="service-tag">TensorFlow</span>
+                            <span class="service-tag">PyTorch</span>
+                            <span class="service-tag">NLP</span>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <h4>Infraestructura Cloud</h4>
+                        <p>Diseño e implementación de arquitecturas cloud-native con enfoque en seguridad y escalabilidad.</p>
+                        <div class="service-tags">
+                            <span class="service-tag">AWS</span>
+                            <span class="service-tag">Docker</span>
+                            <span class="service-tag">Kubernetes</span>
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <section class="contact-section">
+            <section class="clients-section">
+                <h3>Clientes</h3>
+                <div class="clients-grid">
+                    <div class="client-card">
+                        <h4>Mercado Libre</h4>
+                        <p>Desarrollo de microservicios para optimización de rutas de entrega en tiempo real.</p>
+                    </div>
+                    <div class="client-card">
+                        <h4>Falabella Tecnología</h4>
+                        <p>Arquitectura de sistemas de inventario automatizados con inteligencia artificial.</p>
+                    </div>
+                    <div class="client-card">
+                        <h4>CrediTú</h4>
+                        <p>APIs de scoring crediticio y análisis de riesgo predictivo.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="form-section">
                 <h3>Contacto</h3>
-                <form class="contact-form" action="#" method="POST">
+                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                     <div class="form-group">
                         <label for="name">Nombre</label>
                         <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Correo Electrónico</label>
+                        <label for="email">Email</label>
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
                         <label for="message">Mensaje</label>
-                        <textarea id="message" name="message" required></textarea>
+                        <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                    <button type="submit" class="form-button">Enviar Mensaje</button>
                 </form>
             </section>
         </main>
@@ -370,6 +456,5 @@
             <a href="mailto:contacto@vetastudios.io">Contacto</a>
         </div>
     </footer>
-
 </body>
 </html>
