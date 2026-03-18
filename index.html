@@ -11,7 +11,7 @@
             --text-color: #F5F5F5;
             --accent-color: #E63946;
             --border-color: #2B2D42;
-            --card-bg: #0A0A0C;
+            --card-bg: #111111; /* Actualizado para la sección de servicios */
         }
 
         * {
@@ -214,6 +214,51 @@
         footer a:hover {
             color: var(--text-color);
         }
+
+        .services-section {
+            margin-top: 60px;
+        }
+
+        .service-card {
+            background-color: #111111; /* Fondo de la card */
+            border: 1px solid #222222; /* Borde de la card */
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            transition: border-color 0.3s ease;
+        }
+
+        .service-card:hover {
+            border-color: #4A4D6A;
+        }
+
+        .service-card svg {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        .service-card h5 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .service-card p {
+            color: #A0A0A0;
+            font-size: 0.9rem;
+            margin: 0 0 10px 0;
+        }
+
+        .service-tags {
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+        }
+
+        .service-tags .tag {
+            background-color: #222222; /* Fondo de los tags */
+            color: #D0D0D0; /* Color del texto de los tags */
+        }
     </style>
 </head>
 <body>
@@ -257,6 +302,47 @@
                         <span class="tag">Producto Propio</span>
                     </div>
                     <a href="https://kittypotgame.com" class="btn">Ver Proyecto</a>
+                </div>
+            </section>
+
+            <section class="services-section">
+                <h3>Servicios</h3>
+                <div class="service-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 1a7 7 0 1 1 0 14A7 7 0 0 1 8 1z"/><path d="M8 4a1 1 0 0 1 1 1v4a1 1 0 0 1-2 0V5a1 1 0 0 1 1-1z"/><path d="M8 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg>
+                    <h5>Desarrollo Web</h5>
+                    <p>Creación de sitios web responsivos y optimizados para SEO.</p>
+                    <div class="service-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 1a7 7 0 1 1 0 14A7 7 0 0 1 8 1z"/><path d="M8 4a1 1 0 0 1 1 1v4a1 1 0 0 1-2 0V5a1 1 0 0 1 1-1z"/><path d="M8 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg>
+                    <h5>Consultoría</h5>
+                    <p>Asesoría en proyectos de software y arquitectura de sistemas.</p>
+                    <div class="service-tags">
+                        <span class="tag">Arquitectura</span>
+                        <span class="tag">Estrategia</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 1a7 7 0 1 1 0 14A7 7 0 0 1 8 1z"/><path d="M8 4a1 1 0 0 1 1 1v4a1 1 0 0 1-2 0V5a1 1 0 0 1 1-1z"/><path d="M8 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg>
+                    <h5>Desarrollo Móvil</h5>
+                    <p>Aplicaciones móviles nativas y multiplataforma para iOS y Android.</p>
+                    <div class="service-tags">
+                        <span class="tag">iOS</span>
+                        <span class="tag">Android</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 1a7 7 0 1 1 0 14A7 7 0 0 1 8 1z"/><path d="M8 4a1 1 0 0 1 1 1v4a1 1 0 0 1-2 0V5a1 1 0 0 1 1-1z"/><path d="M8 12a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/></svg>
+                    <h5>Optimización de Rendimiento</h5>
+                    <p>Mejoras en la velocidad y eficiencia de aplicaciones existentes.</p>
+                    <div class="service-tags">
+                        <span class="tag">Rendimiento</span>
+                        <span class="tag">Escalabilidad</span>
+                    </div>
                 </div>
             </section>
         </main>
