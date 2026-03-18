@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes | Veta Studios</title>
+    <style>
+        :root {
+            --bg-color: #111111;
+            --text-color: #F5F5F5;
+            --accent-color: #E63946;
+            --border-color: #222222;
+            --card-bg: #0A0A0C;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .clients-section {
+            width: 100%;
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .clients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .client-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .client-card h4 {
+            font-size: 1.2rem;
+            margin: 0 0 10px 0;
+        }
+
+        .client-card p {
+            color: #A0A0A0;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="clients-section">
+        <h3 class="section-title">Con quienes hemos trabajado</h3>
+        <div class="clients-grid">
+            <div class="client-card">
+                <h4>Neuralink</h4>
+                <p>Integración de interfaces cerebro-computadora</p>
+            </div>
+            <div class="client-card">
+                <h4>DeepMind</h4>
+                <p>Desarrollo de algoritmos de aprendizaje automático</p>
+            </div>
+            <div class="client-card">
+                <h4>SpaceX</h4>
+                <p>Optimización de sistemas de telemetría</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
