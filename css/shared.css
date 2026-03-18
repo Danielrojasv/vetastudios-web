@@ -1,0 +1,247 @@
+/* =============================================
+   Veta Studios — Shared Design System
+   ============================================= */
+
+:root {
+  --color-bg: #000000;
+  --color-surface: #111111;
+  --color-accent: #e53935;
+  --color-text: #ffffff;
+  --color-text-muted: #888888;
+  --color-border: #222222;
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* --- Reset mínimo --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Container --- */
+.container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* --- Site Header --- */
+.site-header {
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+  padding: 16px 24px;
+}
+
+.site-header .header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.site-header .logo-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.site-header .logo-img {
+  height: 32px;
+  width: auto;
+}
+
+.site-header .logo-name {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
+
+.site-header .main-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.site-header .main-nav a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 6px 10px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.site-header .main-nav a:hover {
+  color: var(--color-text);
+}
+
+.site-header .main-nav a.active {
+  color: var(--color-text);
+  border-bottom-color: var(--color-accent);
+}
+
+/* --- Main content --- */
+main {
+  flex: 1;
+  padding: 60px 0;
+}
+
+/* --- Hero --- */
+.hero {
+  margin-bottom: 60px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  max-width: 620px;
+  margin: 0;
+}
+
+.accent {
+  color: var(--color-accent);
+}
+
+/* --- Cards --- */
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 28px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* --- Tags --- */
+.tag-container {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.tag {
+  font-size: 0.75rem;
+  padding: 3px 10px;
+  background-color: var(--color-border);
+  border-radius: 4px;
+  color: #cccccc;
+  font-family: monospace;
+}
+
+/* --- Badge --- */
+.badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 12px;
+  letter-spacing: 0.4px;
+}
+
+.badge-green {
+  background-color: rgba(52, 199, 89, 0.15);
+  color: #34c759;
+  border: 1px solid rgba(52, 199, 89, 0.3);
+}
+
+/* --- Section label --- */
+.section-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-text-muted);
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* --- Site Footer --- */
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  padding: 28px 24px;
+}
+
+.site-footer .footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+}
+
+.site-footer a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.site-footer a:hover {
+  color: var(--color-text);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .site-header .header-inner {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .site-header .main-nav {
+    gap: 4px;
+  }
+
+  .site-header .main-nav a {
+    font-size: 0.82rem;
+    padding: 5px 8px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}

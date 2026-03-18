@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Veta Studios</title>
+    <meta name="description" content="Hablemos. Escríbenos a contacto@vetastudios.io o usa el formulario.">
+    <link rel="stylesheet" href="/css/shared.css">
+    <style>
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1.6fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .contact-info h2 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-text-muted);
+            margin: 0 0 8px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-info a {
+            color: var(--color-text);
+            text-decoration: none;
+            font-size: 0.95rem;
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: 2px;
+            transition: border-color 0.2s;
+        }
+
+        .contact-info a:hover {
+            border-color: var(--color-text);
+        }
+
+        .contact-info p {
+            margin: 24px 0 0 0;
+            font-size: 0.88rem;
+            color: var(--color-text-muted);
+            line-height: 1.7;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .form-group label {
+            font-size: 0.82rem;
+            color: var(--color-text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            background-color: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            padding: 12px 14px;
+            color: var(--color-text);
+            font-family: var(--font-primary);
+            font-size: 0.95rem;
+            outline: none;
+            transition: border-color 0.2s;
+            resize: vertical;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: var(--color-accent);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #444;
+        }
+
+        .form-group textarea {
+            min-height: 140px;
+        }
+
+        .btn-submit {
+            align-self: flex-start;
+            background-color: var(--color-accent);
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            padding: 12px 28px;
+            font-family: var(--font-primary);
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .btn-submit:hover {
+            opacity: 0.88;
+        }
+
+        @media (max-width: 768px) {
+            .contact-layout {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="/" class="logo-link">
+                <img src="/logo-veta-blanco.png" alt="Logo de Veta Studios" class="logo-img">
+                <span class="logo-name">Veta Studios</span>
+            </a>
+            <nav class="main-nav">
+                <a href="/servicios">Servicios</a>
+                <a href="/proyectos">Proyectos</a>
+                <a href="/contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h1><span class="accent">Hablemos.</span></h1>
+                <p>¿Tienes un proyecto en mente o quieres saber más sobre lo que hacemos? Escríbenos.</p>
+            </section>
+
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <h2>Email directo</h2>
+                    <a href="mailto:contacto@vetastudios.io">contacto@vetastudios.io</a>
+                    <p>Respondemos en menos de 48 horas hábiles. Para proyectos urgentes, indícalo en el asunto.</p>
+                </div>
+
+                <form class="contact-form" action="https://formspree.io/f/mqeywgwj" method="POST">
+                    <input type="hidden" name="_next" value="https://vetastudios.io/contacto/gracias">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; 2026 Veta Studios. Todos los derechos reservados.</p>
+            <p>
+                <a href="/politicas-de-privacidad">Políticas de Privacidad</a> &nbsp;·&nbsp;
+                <a href="mailto:contacto@vetastudios.io">contacto@vetastudios.io</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.main-nav a').forEach(function(link) {
+            if (window.location.pathname.startsWith(link.getAttribute('href'))) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -4,155 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Políticas de Privacidad | Veta Studios</title>
+    <link rel="stylesheet" href="/css/shared.css">
     <style>
-        :root {
-            --bg-color: #000000;
-            --text-color: #F5F5F5;
-            --accent-color: #E63946;
-            --border-color: #2B2D42;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        .container {
-            max-width: 800px;
-            width: 100%;
-            padding: 40px 20px;
-        }
-
-        header {
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 20px;
-            margin-bottom: 40px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .logo-img {
-            height: 48px;
-            width: auto;
-            display: block;
-        }
-
-        h1 {
-            font-weight: 600;
-            font-size: 1.5rem;
-            margin: 0;
-            letter-spacing: -0.5px;
-        }
-
-        h2 {
+        .policy-content h2 {
             font-weight: 500;
             font-size: 1.2rem;
             margin-top: 40px;
-            color: var(--text-color);
-            border-left: 3px solid var(--accent-color);
+            color: var(--color-text);
+            border-left: 3px solid var(--color-accent);
             padding-left: 10px;
         }
 
-        p, li {
+        .policy-content p,
+        .policy-content li {
             font-size: 0.95rem;
             color: #A0A0A0;
         }
 
-        a {
-            color: var(--accent-color);
+        .policy-content a {
+            color: var(--color-accent);
             text-decoration: none;
             transition: opacity 0.2s;
         }
 
-        a:hover {
+        .policy-content a:hover {
             opacity: 0.8;
             text-decoration: underline;
         }
 
-        footer {
-            margin-top: 60px;
-            padding-top: 20px;
-            border-top: 1px solid var(--border-color);
-            font-size: 0.85rem;
-            color: #666;
-            text-align: center;
+        .policy-content ul {
+            padding-left: 20px;
+        }
+
+        .policy-content li {
+            margin-bottom: 8px;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <img src="/logo-veta-blanco.png" alt="Logo de Veta Studios" class="logo-img">
-            <h1>Veta Studios</h1>
-        </header>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="/" class="logo-link">
+                <img src="/logo-veta-blanco.png" alt="Logo de Veta Studios" class="logo-img">
+                <span class="logo-name">Veta Studios</span>
+            </a>
+            <nav class="main-nav">
+                <a href="/servicios">Servicios</a>
+                <a href="/proyectos">Proyectos</a>
+                <a href="/contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
 
-        <main>
-            <h2>Políticas de Privacidad</h2>
-            <p><strong>Última actualización:</strong> 2 de Marzo de 2026</p>
-            
-            <p>En <strong>Veta Studios</strong> ("nosotros", "nuestro" o "la Firma"), desarrollamos soluciones de ingeniería de software, aplicaciones móviles y productos de entretenimiento digital (conjuntamente, los "Servicios"). Esta Política de Privacidad describe cómo recopilamos, utilizamos y protegemos la información de nuestros usuarios a través de todo nuestro ecosistema, incluyendo nuestro sitio web (<code>vetastudios.io</code>) y productos específicos como <em>Kitty Pot</em> (<code>kittypot.com</code>).</p>
+    <main>
+        <div class="container">
+            <div class="policy-content">
+                <h2>Políticas de Privacidad</h2>
+                <p><strong>Última actualización:</strong> 2 de Marzo de 2026</p>
 
-            <p>Nuestra filosofía técnica es clara: <strong>Minimización de datos</strong>. Recopilamos exclusivamente la telemetría y la información técnica necesaria para garantizar la estabilidad, seguridad y el rendimiento de nuestro software.</p>
+                <p>En <strong>Veta Studios</strong> ("nosotros", "nuestro" o "la Firma"), desarrollamos soluciones de ingeniería de software, aplicaciones móviles y productos de entretenimiento digital (conjuntamente, los "Servicios"). Esta Política de Privacidad describe cómo recopilamos, utilizamos y protegemos la información de nuestros usuarios a través de todo nuestro ecosistema, incluyendo nuestro sitio web (<code>vetastudios.io</code>) y productos específicos como <em>Kitty Pot</em> (<code>kittypot.com</code>).</p>
 
-            <h2>1. Información que recopilamos</h2>
-            <p>El tipo de información recopilada depende del producto o servicio de Veta Studios que estés utilizando:</p>
-            <ul>
-                <li><strong>En nuestras aplicaciones web y plataformas:</strong> Información de diagnóstico estándar, como el tipo de navegador, sistema operativo, páginas visitadas y tiempos de respuesta, utilizada para optimizar la arquitectura del sitio.</li>
-                <li><strong>En nuestros juegos y aplicaciones móviles (ej. Kitty Pot):</strong> No requerimos la creación de cuentas ni recopilamos información personal identificable (PII). Recopilamos datos técnicos anónimos como:
-                    <ul>
-                        <li><strong>Telemetría de rendimiento:</strong> Estadísticas de uso (niveles, tiempos de sesión) para balancear la dificultad y evaluar el consumo de recursos del dispositivo.</li>
-                        <li><strong>Registros de errores (Crash Logs):</strong> Trazas de pila (stack traces) cuando el software se cierra inesperadamente, vitales para que nuestros ingenieros lancen parches de corrección.</li>
-                        <li><strong>Identificadores de Publicidad:</strong> Si un producto incluye monetización mediante anuncios, las redes publicitarias pueden acceder a identificadores temporales del dispositivo (ID de publicidad de Android o IDFA de Apple) para ofrecer contenido relevante.</li>
-                    </ul>
-                </li>
-                <li><strong>Comunicaciones directas:</strong> Si nos contactas para soporte técnico, retendremos tu correo electrónico y el contenido del mensaje únicamente para resolver la incidencia.</li>
-            </ul>
+                <p>Nuestra filosofía técnica es clara: <strong>Minimización de datos</strong>. Recopilamos exclusivamente la telemetría y la información técnica necesaria para garantizar la estabilidad, seguridad y el rendimiento de nuestro software.</p>
 
-            <h2>2. Cómo utilizamos la información</h2>
-            <p>Los datos técnicos se procesan estrictamente para fines operativos y de desarrollo:</p>
-            <ul>
-                <li>Garantizar la estabilidad del software y reparar errores de código.</li>
-                <li>Analizar patrones de uso para planificar futuras actualizaciones y arquitecturas de nuevos productos.</li>
-                <li>Permitir el funcionamiento de integraciones de terceros (como servicios en la nube o redes publicitarias) que financian la operación del estudio.</li>
-            </ul>
+                <h2>1. Información que recopilamos</h2>
+                <p>El tipo de información recopilada depende del producto o servicio de Veta Studios que estés utilizando:</p>
+                <ul>
+                    <li><strong>En nuestras aplicaciones web y plataformas:</strong> Información de diagnóstico estándar, como el tipo de navegador, sistema operativo, páginas visitadas y tiempos de respuesta, utilizada para optimizar la arquitectura del sitio.</li>
+                    <li><strong>En nuestros juegos y aplicaciones móviles (ej. Kitty Pot):</strong> No requerimos la creación de cuentas ni recopilamos información personal identificable (PII). Recopilamos datos técnicos anónimos como:
+                        <ul>
+                            <li><strong>Telemetría de rendimiento:</strong> Estadísticas de uso (niveles, tiempos de sesión) para balancear la dificultad y evaluar el consumo de recursos del dispositivo.</li>
+                            <li><strong>Registros de errores (Crash Logs):</strong> Trazas de pila (stack traces) cuando el software se cierra inesperadamente, vitales para que nuestros ingenieros lancen parches de corrección.</li>
+                            <li><strong>Identificadores de Publicidad:</strong> Si un producto incluye monetización mediante anuncios, las redes publicitarias pueden acceder a identificadores temporales del dispositivo (ID de publicidad de Android o IDFA de Apple) para ofrecer contenido relevante.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Comunicaciones directas:</strong> Si nos contactas para soporte técnico, retendremos tu correo electrónico y el contenido del mensaje únicamente para resolver la incidencia.</li>
+                </ul>
 
-            <h2>3. Integraciones y Servicios de Terceros</h2>
-            <p>Nuestros productos pueden utilizar motores, frameworks y servicios en la nube de terceros. Estas entidades procesan datos de acuerdo con sus propias políticas. Los proveedores comunes incluyen:</p>
-            <ul>
-                <li>Infraestructura de alojamiento (ej. GitHub Pages para sitios web).</li>
-                <li>Servicios de telemetría y análisis (ej. Firebase Analytics, Google Play Console).</li>
-                <li>Redes de monetización publicitaria (ej. Google AdMob, Unity Ads).</li>
-            </ul>
+                <h2>2. Cómo utilizamos la información</h2>
+                <p>Los datos técnicos se procesan estrictamente para fines operativos y de desarrollo:</p>
+                <ul>
+                    <li>Garantizar la estabilidad del software y reparar errores de código.</li>
+                    <li>Analizar patrones de uso para planificar futuras actualizaciones y arquitecturas de nuevos productos.</li>
+                    <li>Permitir el funcionamiento de integraciones de terceros (como servicios en la nube o redes publicitarias) que financian la operación del estudio.</li>
+                </ul>
 
-            <h2>4. Privacidad Infantil (COPPA / GDPR-K)</h2>
-            <p>Aunque algunos de nuestros productos de entretenimiento (como <em>Kitty Pot</em>) son aptos para todas las edades, Veta Studios no dirige sus servicios a la recopilación intencional de datos personales de menores de 13 años. Si crees que hemos recopilado inadvertidamente información personal de un menor, contáctanos para ejecutar su eliminación inmediata de nuestras bases de datos.</p>
+                <h2>3. Integraciones y Servicios de Terceros</h2>
+                <p>Nuestros productos pueden utilizar motores, frameworks y servicios en la nube de terceros. Estas entidades procesan datos de acuerdo con sus propias políticas. Los proveedores comunes incluyen:</p>
+                <ul>
+                    <li>Infraestructura de alojamiento (ej. GitHub Pages para sitios web).</li>
+                    <li>Servicios de telemetría y análisis (ej. Firebase Analytics, Google Play Console).</li>
+                    <li>Redes de monetización publicitaria (ej. Google AdMob, Unity Ads).</li>
+                </ul>
 
-            <h2>5. Seguridad y Retención de Datos</h2>
-            <p>Aplicamos prácticas de ingeniería seguras y cifrado estándar para proteger cualquier información en tránsito. Los datos analíticos anónimos se retienen únicamente durante el ciclo de vida útil del producto o hasta que dejen de ser relevantes para la toma de decisiones técnicas.</p>
+                <h2>4. Privacidad Infantil (COPPA / GDPR-K)</h2>
+                <p>Aunque algunos de nuestros productos de entretenimiento (como <em>Kitty Pot</em>) son aptos para todas las edades, Veta Studios no dirige sus servicios a la recopilación intencional de datos personales de menores de 13 años. Si crees que hemos recopilado inadvertidamente información personal de un menor, contáctanos para ejecutar su eliminación inmediata de nuestras bases de datos.</p>
 
-            <h2>6. Control sobre tus Datos</h2>
-            <p>Tienes control total sobre los identificadores de tu dispositivo. Puedes restringir el uso de tu ID de publicidad directamente desde la configuración del sistema operativo (iOS o Android) desactivando el rastreo o inhabilitando la personalización de anuncios.</p>
+                <h2>5. Seguridad y Retención de Datos</h2>
+                <p>Aplicamos prácticas de ingeniería seguras y cifrado estándar para proteger cualquier información en tránsito. Los datos analíticos anónimos se retienen únicamente durante el ciclo de vida útil del producto o hasta que dejen de ser relevantes para la toma de decisiones técnicas.</p>
 
-            <h2>7. Modificaciones a esta Política</h2>
-            <p>Nos reservamos el derecho de actualizar este documento para reflejar la evolución de nuestra arquitectura de software o nuevos requisitos legales. Los cambios entrarán en vigor en el momento de su publicación en este dominio.</p>
+                <h2>6. Control sobre tus Datos</h2>
+                <p>Tienes control total sobre los identificadores de tu dispositivo. Puedes restringir el uso de tu ID de publicidad directamente desde la configuración del sistema operativo (iOS o Android) desactivando el rastreo o inhabilitando la personalización de anuncios.</p>
 
-            <h2>8. Contacto</h2>
-            <p>Para consultas técnicas, auditorías de privacidad o reportes de vulnerabilidades, comunícate con nuestro equipo:</p>
-            <p><strong>Correo electrónico:</strong> <a href="mailto:legal@vetastudios.io">legal@vetastudios.io</a></p>
-        </main>
+                <h2>7. Modificaciones a esta Política</h2>
+                <p>Nos reservamos el derecho de actualizar este documento para reflejar la evolución de nuestra arquitectura de software o nuevos requisitos legales. Los cambios entrarán en vigor en el momento de su publicación en este dominio.</p>
 
-        <footer>
-            &copy; 2026 Veta Studios. Todos los derechos reservados.
-        </footer>
-    </div>
+                <h2>8. Contacto</h2>
+                <p>Para consultas técnicas, auditorías de privacidad o reportes de vulnerabilidades, comunícate con nuestro equipo:</p>
+                <p><strong>Correo electrónico:</strong> <a href="mailto:legal@vetastudios.io">legal@vetastudios.io</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; 2026 Veta Studios. Todos los derechos reservados.</p>
+            <p>
+                <a href="/politicas-de-privacidad">Políticas de Privacidad</a> &nbsp;·&nbsp;
+                <a href="mailto:contacto@vetastudios.io">contacto@vetastudios.io</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.main-nav a').forEach(function(link) {
+            if (window.location.pathname.startsWith(link.getAttribute('href'))) {
+                link.classList.add('active');
+            }
+        });
+    </script>
 
 </body>
 </html>

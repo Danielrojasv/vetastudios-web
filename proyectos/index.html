@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos | Veta Studios</title>
+    <meta name="description" content="Proyectos en producción de Veta Studios: Kitty Pot y vetastudios.io.">
+    <link rel="stylesheet" href="/css/shared.css">
+    <style>
+        .projects-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            padding: 32px;
+            transition: border-color 0.2s;
+        }
+
+        .project-card:hover {
+            border-color: #444;
+        }
+
+        .project-card .project-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 12px;
+        }
+
+        .project-card h3 {
+            margin: 0;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        .project-card p {
+            margin: 0 0 16px 0;
+            font-size: 0.95rem;
+            color: var(--color-text-muted);
+            line-height: 1.65;
+        }
+
+        .project-card a.btn-link {
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 0.88rem;
+            color: var(--color-text-muted);
+            text-decoration: none;
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: 2px;
+            transition: color 0.2s, border-color 0.2s;
+        }
+
+        .project-card a.btn-link:hover {
+            color: var(--color-text);
+            border-color: var(--color-text);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="/" class="logo-link">
+                <img src="/logo-veta-blanco.png" alt="Logo de Veta Studios" class="logo-img">
+                <span class="logo-name">Veta Studios</span>
+            </a>
+            <nav class="main-nav">
+                <a href="/servicios">Servicios</a>
+                <a href="/proyectos">Proyectos</a>
+                <a href="/contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h1>Lo que hemos <span class="accent">construido.</span></h1>
+                <p>Proyectos propios en producción. Cada uno es una prueba de nuestra capacidad técnica y nuestro enfoque en calidad.</p>
+            </section>
+
+            <div class="projects-grid">
+                <!-- Kitty Pot -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Kitty Pot</h3>
+                        <span class="badge badge-green">En producción</span>
+                    </div>
+                    <p>Un puzzle de física para móvil que demuestra nuestro dominio en motores de colisiones y optimización de recursos. Mecánicas de gravedad y rebote empaquetadas en una experiencia lúdica adictiva disponible en App Store y Google Play.</p>
+                    <div class="tag-container">
+                        <span class="tag">React Native</span>
+                        <span class="tag">Motor de Físicas</span>
+                        <span class="tag">iOS</span>
+                        <span class="tag">Android</span>
+                    </div>
+                    <a href="https://kittypotgame.com" class="btn-link" target="_blank" rel="noopener">Ver sitio del juego →</a>
+                </div>
+
+                <!-- vetastudios.io -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>vetastudios.io</h3>
+                        <span class="badge badge-green">En producción</span>
+                    </div>
+                    <p>El sitio que estás viendo ahora. Un site estático de alto rendimiento construido sin frameworks ni herramientas de build: HTML semántico, CSS con sistema de diseño propio, desplegado automáticamente con GitHub Actions en GitHub Pages.</p>
+                    <div class="tag-container">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">GitHub Pages</span>
+                        <span class="tag">GitHub Actions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; 2026 Veta Studios. Todos los derechos reservados.</p>
+            <p>
+                <a href="/politicas-de-privacidad">Políticas de Privacidad</a> &nbsp;·&nbsp;
+                <a href="mailto:contacto@vetastudios.io">contacto@vetastudios.io</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.main-nav a').forEach(function(link) {
+            if (window.location.pathname.startsWith(link.getAttribute('href'))) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+
+</body>
+</html>
