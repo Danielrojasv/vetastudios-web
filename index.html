@@ -60,6 +60,10 @@
             transition: border-color 0.3s ease;
         }
 
+        .project-card + .project-card {
+            margin-top: 20px;
+        }
+
         .project-card:hover {
             border-color: #4A4D6A;
         }
@@ -170,6 +174,17 @@
                 <h3>Productos Internos</h3>
 
                 <div class="project-card">
+                    <h4>Fasico</h4>
+                    <p>SaaS integral para empresas constructoras y de servicios. Integra cotizaciones, proyectos, facturación y control operativo en una sola plataforma. Arquitectura React + FastAPI diseñada para crecer con la operación de cada cliente.</p>
+                    <div class="tag-container">
+                        <span class="tag">SaaS B2B</span>
+                        <span class="tag">React</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
                     <h4>Kitty Pot</h4>
                     <p>Una demostración técnica de nuestro dominio en motores físicos y optimización de recursos móviles. Un puzzle dinámico de colisiones y manejo de gravedad, empaquetado como una experiencia lúdica altamente adictiva.</p>
                     <div class="tag-container">
@@ -179,6 +194,17 @@
                         <span class="tag">Producto Propio</span>
                     </div>
                     <a href="https://kittypotgame.com" class="btn">Ver Proyecto</a>
+                </div>
+
+                <div class="project-card">
+                    <h4>Lazz</h4>
+                    <p>App móvil para profesoras y profesores que corrige pruebas escaneando hojas con la cámara. Combina reconocimiento óptico de marcas (OMR) para selección múltiple con visión computacional y un modelo de IA para preguntas de desarrollo. Diseñada desde Chile, pensada en la realidad de la sala de clases.</p>
+                    <div class="tag-container">
+                        <span class="tag">React Native</span>
+                        <span class="tag">OpenCV</span>
+                        <span class="tag">IA</span>
+                        <span class="tag">iOS + Android</span>
+                    </div>
                 </div>
             </section>
         </div>
