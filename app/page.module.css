@@ -128,6 +128,10 @@
   transition: border-color 0.3s ease;
 }
 
+.projectCard + .projectCard {
+  margin-top: calc(2 * var(--spacing-unit));
+}
+
 .projectCard:hover {
   border-color: #4A4D6A; /* This color is not a var, so I'm keeping it for now, can be added as --color-hover-border */
 }

@@ -52,7 +52,20 @@ export default function Home() {
 
         <section>
           <h3 className={styles.projectsSectionH3}>Productos Internos</h3>
-          
+
+          <div className={styles.projectCard}>
+            <h4 className={styles.projectCardH4}>Fasico</h4>
+            <p className={styles.projectCardP}>
+              SaaS integral para empresas constructoras y de servicios. Integra cotizaciones, proyectos, facturación y control operativo en una sola plataforma. Arquitectura React + FastAPI diseñada para crecer con la operación de cada cliente.
+            </p>
+            <div className={styles.tagContainer}>
+              <span className={styles.tag}>SaaS B2B</span>
+              <span className={styles.tag}>React</span>
+              <span className={styles.tag}>FastAPI</span>
+              <span className={styles.tag}>PostgreSQL</span>
+            </div>
+          </div>
+
           <div className={styles.projectCard}>
             <h4 className={styles.projectCardH4}>Kitty Pot</h4>
             <p className={styles.projectCardP}>
@@ -65,6 +78,19 @@ export default function Home() {
               <span className={styles.tag}>Producto Propio</span>
             </div>
             <a href="https://kittypotgame.com" className={styles.btn}>Ver Proyecto</a>
+          </div>
+
+          <div className={styles.projectCard}>
+            <h4 className={styles.projectCardH4}>Lazz</h4>
+            <p className={styles.projectCardP}>
+              App móvil para profesoras y profesores que corrige pruebas escaneando hojas con la cámara. Combina reconocimiento óptico de marcas (OMR) para selección múltiple con visión computacional y un modelo de IA para preguntas de desarrollo. Diseñada desde Chile, pensada en la realidad de la sala de clases.
+            </p>
+            <div className={styles.tagContainer}>
+              <span className={styles.tag}>React Native</span>
+              <span className={styles.tag}>OpenCV</span>
+              <span className={styles.tag}>IA</span>
+              <span className={styles.tag}>iOS + Android</span>
+            </div>
           </div>
         </section>
       </main>
